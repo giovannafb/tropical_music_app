@@ -1,0 +1,113 @@
+/* Mise en page : coques User / Artist / Admin (sidebar + zone principale + barre de lecture)
+   et pages d'authentification. */
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  /* 1rem = 16px sur un écran de 1920px (base du Figma), proportionnel en dessous */
+  font-size: clamp(9px, calc(100vw / 120), 16px);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font);
+  color: var(--color-text);
+  background: var(--gradient-main);
+  background-attachment: fixed;
+}
+
+button, input, textarea, select { font: inherit; color: inherit; }
+button { cursor: pointer; }
+[hidden] { display: none !important; }
+
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip: rect(0 0 0 0); white-space: nowrap;
+}
+
+/* ---------- Coque applicative ---------- */
+.shell {
+  display: grid;
+  grid-template-columns: var(--sidebar-width) 1fr;
+  height: 100vh;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background: var(--gradient-sidebar);
+  border-right: 1px solid var(--color-nav-border);
+  min-height: 0;
+}
+
+.sidebar__header {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  height: var(--sidebar-header-height);
+  padding: 0 1.125rem;
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+  font-size: 1.625rem;
+  flex-shrink: 0;
+}
+
+.sidebar__nav { display: flex; flex-direction: column; }
+.sidebar__bottom { margin-top: auto; }
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 2.1rem;
+  height: var(--nav-item-height);
+  padding: 0 1.25rem;
+  background: var(--color-nav-item);
+  border-bottom: 1px solid var(--color-nav-border);
+  color: var(--color-text);
+  font-size: 1.75rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+.nav-item:hover { filter: brightness(0.97); }
+.nav-item .icon { font-size: 2.4rem; }
+.nav-item.is-active { background: var(--color-nav-item-active); }
+.sidebar__bottom .nav-item { background: var(--color-nav-bottom); border-top: 1px solid var(--color-nav-border); border-bottom: 0; }
+.sidebar__bottom .nav-item.is-active { background: var(--color-nav-item-active); }
+
+.main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+  background: var(--gradient-main);
+}
+
+.main__content {
+  flex: 1;
+  overflow-y: auto;
+  min-height: 0;
+}
+
+/* ---------- Authentification (écrans 01 à 03) ---------- */
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+  gap: 2rem;
+  color: var(--color-auth);
+}
+
+/* ---------- Écrans étroits (portable en fenêtre réduite, tablette, mobile) ---------- */
+@media (max-width: 900px) {
+  html { font-size: 9px; }
+  .shell { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto minmax(0, 1fr); }
+  .sidebar { min-width: 0; flex-direction: row; flex-wrap: nowrap; overflow-x: auto; border-right: 0; border-bottom: 1px solid var(--color-nav-border); }
+  .sidebar__header { display: none; }
+  .sidebar__nav, .sidebar__bottom { flex-direction: row; margin-top: 0; flex-shrink: 0; }
+  .nav-item { height: 6rem; padding: 0 1.5rem; gap: 1rem; border-right: 1px solid var(--color-nav-border); white-space: nowrap; }
+  .sidebar__bottom .nav-item { border-top: 0; }
+}

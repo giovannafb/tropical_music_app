@@ -1,0 +1,155 @@
+# MusicApp — application 3 tiers
+#   Présentation : nginx (client/)      -> sert la SPA, proxy /api/, audio (X-Accel-Redirect), covers
+#   Métier       : api ×N + worker (metier/)
+#   Données      : mysql (donnees/) + redis + elasticsearch ×3 + stockage fichiers (volume media)
+#
+# Démarrage (depuis ce dossier avec-docker/) : docker compose up -d --build --scale api=3
+name: musicapp
+
+x-app: &app
+  build: ../metier
+  env_file: .env
+  environment:
+    DATABASE_URL: mysql+pymysql://${MYSQL_USER}:${MYSQL_PASSWORD}@mysql:3306/${MYSQL_DATABASE}?charset=utf8mb4
+    REDIS_URL: redis://redis:6379/0
+    ES_HOSTS: http://es01:9200,http://es02:9200,http://es03:9200
+    MEDIA_ROOT: /data
+    SMTP_HOST: mailpit
+    SMTP_PORT: "1025"
+  volumes:
+    - media:/data
+
+x-es: &es
+  image: docker.elastic.co/elasticsearch/elasticsearch:8.15.3
+  environment: &es-env
+    cluster.name: musicapp
+    discovery.seed_hosts: es01,es02,es03
+    cluster.initial_master_nodes: es01,es02,es03
+    ES_JAVA_OPTS: -Xms512m -Xmx512m
+    # Développement uniquement : sécurité (TLS + mot de passe) désactivée, à justifier dans le rapport
+    xpack.security.enabled: "false"
+    bootstrap.memory_lock: "false"
+  ulimits:
+    nofile: { soft: 65536, hard: 65536 }
+  healthcheck:
+    test: ["CMD-SHELL", "curl -fs http://localhost:9200/_cluster/health?wait_for_status=yellow&timeout=5s || exit 1"]
+    interval: 10s
+    timeout: 10s
+    retries: 30
+
+services:
+  # ---------- Couche présentation ----------
+  nginx:
+    build: ../client
+    ports:
+      - "80:80"
+    volumes:
+      - media:/data:ro
+    depends_on:
+      api:
+        condition: service_started
+
+  # ---------- Couche métier ----------
+  api:
+    <<: *app
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+      redis:
+        condition: service_started
+
+  worker:
+    <<: *app
+    command: ["python", "-m", "app.workers.main"]
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+      redis:
+        condition: service_started
+      es01:
+        condition: service_healthy
+
+  # Migrations Alembic de la couche données (seule façon de modifier le schéma)
+  migrate:
+    <<: *app
+    command: ["alembic", "-c", "/donnees/alembic.ini", "upgrade", "head"]
+    volumes:
+      - ../donnees:/donnees:ro
+    restart: "no"
+    depends_on:
+      mysql:
+        condition: service_healthy
+
+  # ---------- Couche données ----------
+  mysql:
+    build: ../donnees          # mysql:8.4 + configuration utf8mb4 (donnees/mysql/conf.d)
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    volumes:
+      - mysql-data:/var/lib/mysql
+    # Ping en TCP (127.0.0.1) : au premier démarrage, l'image lance d'abord un serveur temporaire
+    # joignable uniquement par socket ; « localhost » le déclarerait prêt trop tôt.
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h 127.0.0.1 -u root -p$$MYSQL_ROOT_PASSWORD --silent"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+      start_period: 20s
+
+  redis:
+    image: redis:7-alpine
+    command: ["redis-server", "--appendonly", "yes"]
+    volumes:
+      - redis-data:/data
+
+  es01:
+    <<: *es
+    environment:
+      <<: *es-env
+      node.name: es01
+    volumes:
+      - es01-data:/usr/share/elasticsearch/data
+
+  es02:
+    <<: *es
+    environment:
+      <<: *es-env
+      node.name: es02
+    volumes:
+      - es02-data:/usr/share/elasticsearch/data
+
+  es03:
+    <<: *es
+    environment:
+      <<: *es-env
+      node.name: es03
+    volumes:
+      - es03-data:/usr/share/elasticsearch/data
+
+  # ---------- Outils ----------
+  kibana:
+    image: docker.elastic.co/kibana/kibana:8.15.3
+    environment:
+      ELASTICSEARCH_HOSTS: '["http://es01:9200","http://es02:9200","http://es03:9200"]'
+    ports:
+      - "5601:5601"
+    depends_on:
+      es01:
+        condition: service_healthy
+
+  # Développement : les emails sont capturés (interface web http://localhost:8025)
+  mailpit:
+    image: axllent/mailpit:latest
+    ports:
+      - "8025:8025"
+
+volumes:
+  media:
+  mysql-data:
+  redis-data:
+  es01-data:
+  es02-data:
+  es03-data:

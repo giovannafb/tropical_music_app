@@ -1,0 +1,76 @@
+/* Design tokens du Figma MusicApp (docs/MusicApp_figma.md §6) + valeurs relevées sur les captures.
+   Base de mise en page : écran Figma 1920 × 1080 -> 1rem = 16px à 1920px de large
+   (toutes les tailles sont en rem : l'interface garde les proportions du Figma). */
+:root {
+  /* Police choisie par le porteur du projet */
+  --font: "Kaisei Tokumin", serif;
+
+  /* Marque */
+  --color-primary: #45939A;
+  --color-on-primary: #FFFFFF;
+
+  /* Fonds */
+  --gradient-main: linear-gradient(180deg, #8CF7F9 0%, #FFFFFF 100%);
+  --gradient-sidebar: linear-gradient(180deg, #BAFBFB 0%, #FFFFFF 100%);
+  --gradient-list: linear-gradient(180deg, #7DBABB 0%, #BDBDBD 100%);
+
+  /* Navigation */
+  --color-nav-item: #BEEBEC;
+  --color-nav-item-active: #ACC1C2;
+  --color-nav-border: #88AAAA;
+  --color-nav-bottom: #EBEEEE;
+
+  /* Listes et blocs */
+  --color-row-track: rgba(137, 146, 146, 0.35);   /* lignes de titres, semi-transparentes (relevé) */
+  --color-row-track-separator: rgba(99, 139, 139, 0.55);
+  --color-row-separator: #638B8B;
+  --color-row-neutral: #D9D9D9;
+  --color-block-neutral: #CCCCCC;
+
+  /* Formulaires */
+  --color-input-bg: #ECFEFE;
+  --color-input-border: #B6DADB;
+  --color-field: #FFFFFF;
+  --color-search-bar: rgba(84, 101, 102, 0.4);    /* relevé sur Search 1 / Search 2 */
+
+  /* Placeholders */
+  --color-placeholder-bg: #ECE6F0;
+  --color-placeholder-shape: #C9C3CD;
+  --color-avatar-bg: #75CECF;
+  --color-avatar-icon: #4F378A;
+
+  /* Texte */
+  --color-text: #000000;
+  --color-text-secondary: #273838;
+  --color-text-header: #4C4C4C;       /* en-têtes Title / Artist / Album / Length */
+  --color-text-muted: #3B6364;        /* « Change username », crayon */
+  --color-icon: #000000;
+  --color-pen-bio: #666666;
+
+  /* Écrans d'authentification et messages */
+  --color-auth: #129198;              /* titres, libellés, liens et boutons */
+  --color-card: rgba(255, 255, 255, 0.5);
+  --shadow-card: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+
+  /* Barre de lecture */
+  --color-player-bg: #747474;
+  --color-progress-done: #000000;
+  --color-progress-rest: #E8DEF8;
+
+  /* Erreurs (couleur d'erreur du kit Material 3 utilisé par le Figma) */
+  --color-error: #B3261E;
+
+  /* Dimensions (base 1920 × 1080) */
+  --sidebar-width: 26.6875rem;        /* 427px */
+  --sidebar-header-height: 6.5rem;    /* 104px */
+  --nav-item-height: 5.125rem;        /* 82px */
+  --row-track-height: 5.5625rem;      /* 89px */
+  --row-album-height: 9.0625rem;      /* 145px */
+  --row-playlist-height: 8.6875rem;   /* 139px */
+  --table-header-height: 6.5rem;      /* 104px */
+  --player-height: 10rem;             /* 160px */
+
+  --radius-card: 1.875rem;
+  --radius-field: 1.25rem;
+  --radius-pill: 999px;
+}

@@ -1,0 +1,3 @@
+# Seule la configuration MySQL entre dans l'image (surtout pas les 7 Go de fma/)
+*
+!mysql/

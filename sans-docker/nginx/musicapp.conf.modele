@@ -1,0 +1,67 @@
+# Nginx — version sans Docker. Modèle utilisé par sans-docker/demarrer.sh, qui remplace les @VARIABLES@
+# et installe le résultat dans /etc/nginx/sites-available/musicapp (ne pas modifier le fichier installé).
+# Mêmes règles que client/nginx/default.conf (version Docker), seuls les ports et les chemins changent.
+
+upstream musicapp_api {
+    least_conn;
+@SERVEURS_API@
+}
+
+# Limitation de débit (par adresse IP)
+limit_req_zone $binary_remote_addr zone=musicapp_search:10m rate=10r/s;
+limit_req_zone $binary_remote_addr zone=musicapp_login:10m rate=10r/m;
+limit_req_zone $binary_remote_addr zone=musicapp_mail:10m rate=3r/m;
+
+server {
+    listen @SITE_PORT@;
+    server_name _;
+    limit_req_status 429;
+
+    # Upload d'album : 1 Mo par défaut provoquerait une erreur 413
+    client_max_body_size 200M;
+
+    proxy_set_header Host $host;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header X-Forwarded-Proto $scheme;
+    proxy_read_timeout 120s;
+
+    location /api/ {
+        proxy_pass http://musicapp_api;
+    }
+
+    location = /api/search {
+        limit_req zone=musicapp_search burst=20 nodelay;
+        proxy_pass http://musicapp_api;
+    }
+
+    location = /api/auth/login {
+        limit_req zone=musicapp_login burst=5 nodelay;
+        proxy_pass http://musicapp_api;
+    }
+
+    location ~ ^/api/auth/(resend-verification|forgot-password)$ {
+        limit_req zone=musicapp_mail burst=2 nodelay;
+        proxy_pass http://musicapp_api;
+    }
+
+    # Fichiers audio : accessibles uniquement via X-Accel-Redirect envoyé par l'API (Nginx gère Range)
+    location /protected-audio/ {
+        internal;
+        alias "@MEDIA@/audio/";
+        types { audio/mpeg mp3; }
+    }
+
+    location /covers/ {
+        alias "@MEDIA@/covers/";
+        expires 30d;
+        add_header Cache-Control "public";
+    }
+
+    # Le client est servi directement depuis le dossier du projet (modifications visibles sans copie)
+    location / {
+        root "@CLIENT@";
+        sendfile off;          # /mnt/c (disque Windows) : évite de servir des fichiers périmés
+        try_files $uri /index.html;
+    }
+}
