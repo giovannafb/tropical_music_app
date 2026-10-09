@@ -23,7 +23,7 @@ SITE_PORT=8080
 MAILPIT_UI_PORT=8026
 MAILPIT_SMTP_PORT=1026
 API_FIRST_PORT=8000
-ES_URL="http://127.0.0.1:9200"
+#ES_URL="http://${HOST_DB}:9200"
 
 etape() { printf '\n\033[1;36m==> %s\033[0m\n' "$1"; }
 ok() { printf '\033[32m    %s\033[0m\n' "$1"; }
@@ -50,13 +50,14 @@ charger_env() {
 
   local mot_de_passe
   mot_de_passe="$(python3 -c 'import sys, urllib.parse; print(urllib.parse.quote(sys.argv[1], safe=""))' "$MYSQL_PASSWORD")"
-  export DATABASE_URL="mysql+pymysql://${MYSQL_USER}:${mot_de_passe}@127.0.0.1:3306/${MYSQL_DATABASE}?charset=utf8mb4"
-  export REDIS_URL="redis://127.0.0.1:6379/0"
+  export DATABASE_URL="mysql+pymysql://${MYSQL_USER}:${mot_de_passe}@${HOST_DB}:3306/${MYSQL_DATABASE}?charset=utf8mb4"
+  export REDIS_URL="redis://${HOST_DB}:6379/0"
+  export ES_URL="http://${HOST_DB}:9200"  
   export ES_HOSTS="$ES_URL"
   export ES_REPLICAS=0                          # un seul nœud : pas de réplique possible
   export MEDIA_ROOT="$MEDIA"
   export SMTP_HOST=127.0.0.1 SMTP_PORT="$MAILPIT_SMTP_PORT"
-  export PUBLIC_URL="http://localhost:$SITE_PORT"
+  export PUBLIC_URL="http://${HOST_FRONT}:$SITE_PORT"
   export PYTHONPYCACHEPREFIX="$LOCAL/pycache"   # pas de __pycache__ dans le projet
   API_INSTANCES="${API_INSTANCES:-3}"
   WEB_CONCURRENCY="${WEB_CONCURRENCY:-2}"

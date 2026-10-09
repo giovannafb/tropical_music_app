@@ -1,4 +1,6 @@
 [mysqld]
+bind-address = 0.0.0.0
+
 # Encodage utf8mb4 partout (accents, emojis)
 character-set-server = utf8mb4
 collation-server = utf8mb4_0900_ai_ci
