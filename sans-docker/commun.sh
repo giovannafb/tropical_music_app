@@ -82,7 +82,7 @@ generer_conf_nginx() {
   local conf serveurs="" i
   shopt -u patsub_replacement 2>/dev/null || true   # bash 5.2 : « & » reste littéral dans les remplacements
   for ((i = 0; i < API_INSTANCES; i++)); do
-    serveurs+="    server 127.0.0.1:$((API_FIRST_PORT + i));"$'\n'
+    serveurs+="    server ${HOST_BACKEND}:$((API_FIRST_PORT + i));"$'\n'
   done
   conf="$(<"$SANS_DOCKER/nginx/musicapp.conf.modele")"
   conf="${conf//@SERVEURS_API@/${serveurs%$'\n'}}"
