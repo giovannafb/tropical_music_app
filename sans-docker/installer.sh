@@ -36,7 +36,7 @@ elif [ "$TARGET" == "api" ]; then
   etape "1/4 Paquets Ubuntu : Python (mot de passe sudo demandé)"
   sudo apt-get install -y python3-venv curl
 elif [ "$TARGET" == "web" ]; then
-  etape "1/2 Paquets Ubuntu : Nginx"
+  etape "1/3 Paquets Ubuntu : Nginx"
   sudo apt-get install -y nginx curl
   sudo systemctl disable nginx 2>/dev/null || true
 fi
@@ -96,12 +96,14 @@ YML
 
   etape "5/5 Réglage système pour Redis"
   sudo sed -i 's/bind 127.0.0.1/bind 0.0.0.0/g' /etc/redis/redis.conf
+  sudo sed -i 's/^protected-mode yes/protected-mode no/' /etc/redis/redis.conf
   sudo systemctl restart redis-server
 fi
 
 if [ "$TARGET" == "api" ]; then
   etape "2/4 Dossier des fichiers audio et covers ($MEDIA)"
   sudo install -d -o "$USER" -g "$USER" -m 755 /var/lib/musicapp "$MEDIA" "$MEDIA/audio" "$MEDIA/covers"
+  sudo chmod -R 755 /var/lib/musicapp/media
   ok "dossier prêt"
 
   etape "3/4 Python : environnement virtuel et dépendances de l'API"
@@ -122,8 +124,16 @@ if [ "$TARGET" == "api" ]; then
 fi
 
 if [ "$TARGET" == "web" ]; then
-  etape "2/2 Nginx : retrait du site par défaut (port 80 réservé à la version Docker)"
+  etape "2/3 Nginx : retrait du site par défaut (port 80 réservé à la version Docker)"
   sudo rm -f /etc/nginx/sites-enabled/default
+
+  etape "3/3 SSHFS et configuration FUSE:" 
+  #Utilisé pour faire une liaison entre les dossiers de media dans 
+  #la machine de front et les mêmes dossiers dans la machine de backend
+  sudo apt-get install -y sshfs
+  sudo sed -i 's/^#user_allow_other/user_allow_other/' /etc/fuse.conf
+  sudo mkdir -p /var/lib/musicapp/media
+  sudo chown -R $USER:$USER /var/lib/musicapp
   ok "la configuration MusicApp est générée à chaque démarrage par demarrer.sh"
 fi
 
