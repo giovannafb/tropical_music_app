@@ -89,7 +89,7 @@ if [ "$TARGET" == "web" ]; then
   #Cela démande le mot de passe de machine de backend
   if ! mountpoint -q /var/lib/musicapp/media; then
     sshfs -o allow_other backend@${HOST_BACKEND}:/var/lib/musicapp/media /var/lib/musicapp/media
-
+  fi
   etape "Nginx (port $SITE_PORT)"
   generer_conf_nginx > "$RUN/nginx-musicapp.conf"
   sudo install -m 644 "$RUN/nginx-musicapp.conf" /etc/nginx/sites-available/musicapp
