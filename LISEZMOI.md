@@ -10,23 +10,24 @@ Le client n'a **aucun accès** à la base : il n'appelle que `/api/…`, et seul
 
 ---
 
-## Lancer l'application : deux versions
+## Lancer l'application : trois versions
 
 Le code (`client/`, `metier/`, `donnees/`) est commun ; seule la façon de faire tourner l'infrastructure change.
 
-| | [`avec-docker/`](avec-docker/LISEZMOI.md) | [`sans-docker/`](sans-docker/LISEZMOI.md) |
-|---|---|---|
-| Principe | Toute la stack du doc dans des conteneurs | Services installés dans Ubuntu (WSL) |
-| Lancement | `docker compose up -d --scale api=3` (PowerShell) | `bash sans-docker/demarrer.sh` (Ubuntu) |
-| Application | http://localhost | http://localhost:8080 |
-| Emails (Mailpit) | http://localhost:8025 | http://localhost:8026 |
-| Elasticsearch | cluster de 3 nœuds, Kibana | 1 nœud, sans Kibana |
-| Configuration | `avec-docker/.env` | `sans-docker/.env` |
+| | [`avec-docker/`](avec-docker/LISEZMOI.md) | [`sans-docker/`](sans-docker/LISEZMOI.md) | [`avec-vm/`](avec-vm/LISEZMOI.md) |
+|---|---|---|---|
+| Principe | Toute la stack du doc dans des conteneurs | Services installés dans Ubuntu (WSL) | Une VM VirtualBox par couche (présentation, métier, données) |
+| Lancement | `docker compose up -d --scale api=3` (PowerShell) | `bash sans-docker/demarrer.sh` (Ubuntu) | `bash avec-vm/demarrer.sh` (Ubuntu) |
+| Application | http://localhost | http://localhost:8080 | http://localhost:8081 |
+| Emails (Mailpit) | http://localhost:8025 | http://localhost:8026 | http://localhost:8027 |
+| Elasticsearch | cluster de 3 nœuds, Kibana | 1 nœud, sans Kibana | 1 nœud, sans Kibana |
+| Configuration | `avec-docker/.env` | `sans-docker/.env` | `avec-vm/.env` (créé par `installer.sh`) |
 
-- Les deux versions sont **indépendantes** : ports, configuration et données différents (base, comptes, fichiers audio).
-- Il faut **arrêter l'une avant de lancer l'autre** : la mémoire ne suffit pas pour les deux.
-  - Passer de Docker à sans Docker : `docker compose stop` (dans `avec-docker/`), puis `bash sans-docker/demarrer.sh`.
-  - Passer de sans Docker à Docker : `bash sans-docker/arreter.sh`, puis `docker compose up -d --scale api=3`.
+- Les trois versions sont **indépendantes** : ports, configuration et données différents (base, comptes, fichiers audio).
+- Il faut **arrêter l'une avant de lancer une autre** : la mémoire ne suffit pas pour deux.
+  - Arrêter Docker : `docker compose stop` (dans `avec-docker/`).
+  - Arrêter sans Docker : `bash sans-docker/arreter.sh`.
+  - Arrêter les VM : `bash avec-vm/arreter.sh`.
 - Les mesures du doc qui comparent 0 et 2 répliques Elasticsearch se font avec la version Docker, la seule à avoir 3 nœuds.
 
 ---

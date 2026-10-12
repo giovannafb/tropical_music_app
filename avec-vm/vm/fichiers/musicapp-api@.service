@@ -1,0 +1,20 @@
+# Une instance de l'API (vm-metier) par port : musicapp-api@8000, musicapp-api@8001…
+# Nginx (vm-presentation) répartit les requêtes entre elles (équivalent de « --scale api=3 »).
+[Unit]
+Description=MusicApp API (port %i)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=musicapp
+Group=musicapp
+WorkingDirectory=/opt/musicapp/metier
+EnvironmentFile=/etc/musicapp/metier.env
+# Écoute sur l'adresse privée (API_BIND) : invisible depuis la carte NAT
+ExecStart=/opt/musicapp/venv/bin/gunicorn app.main:app -k uvicorn.workers.UvicornWorker \
+    -w ${WEB_CONCURRENCY} -b ${API_BIND}:%i --access-logfile - --error-logfile -
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

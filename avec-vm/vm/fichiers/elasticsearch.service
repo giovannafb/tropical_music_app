@@ -1,0 +1,27 @@
+# Elasticsearch (vm-donnees), installé depuis l'archive officielle dans /opt/elasticsearch.
+# systemd le démarre avec la VM et le relance s'il s'arrête (équivalent du « restart » de Docker Compose).
+[Unit]
+Description=Elasticsearch (MusicApp)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=elasticsearch
+Group=elasticsearch
+Environment=ES_HOME=/opt/elasticsearch
+Environment=ES_PATH_CONF=/opt/elasticsearch/config
+# -q : journaux dans /var/log/elasticsearch plutôt que dans le journal système
+ExecStart=/opt/elasticsearch/bin/elasticsearch -q
+LimitNOFILE=65535
+LimitNPROC=4096
+LimitAS=infinity
+LimitFSIZE=infinity
+TimeoutStartSec=300
+TimeoutStopSec=60
+# Code de sortie de Java après un arrêt demandé (SIGTERM)
+SuccessExitStatus=143
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

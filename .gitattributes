@@ -1,3 +1,6 @@
 # Les scripts bash doivent garder des fins de ligne Unix, même depuis Windows
 *.sh text eol=lf
 *.modele text eol=lf
+# Version VM : fichiers copiés dans les VM Linux (services systemd, modèles, scripts sans extension)
+avec-vm/vm/fichiers/* text eol=lf
+avec-vm/.env.example text eol=lf

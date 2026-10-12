@@ -1,0 +1,16 @@
+# Mailpit (vm-metier) : faux serveur SMTP qui capture les emails de développement.
+# SMTP sur 127.0.0.1 (seul le worker de cette VM envoie des emails) ; interface web sur le port 8025,
+# ouverte à Windows par la redirection de port VirtualBox (http://localhost:8027).
+[Unit]
+Description=Mailpit (emails de développement)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+DynamicUser=yes
+ExecStart=/usr/local/bin/mailpit --listen 0.0.0.0:8025 --smtp 127.0.0.1:1025
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

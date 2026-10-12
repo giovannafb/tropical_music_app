@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# Lance Python dans l'environnement de l'application (vm-metier), avec l'utilisateur musicapp.
+# Utilisé pour les migrations et les scripts :
+#   sudo musicapp-python -m app.scripts.create_admin --username admin --email admin@example.com
+#   sudo musicapp-python -m app.scripts.seed_fma --metadata /fma/fma_metadata.zip --audio /fma/fma_small.zip --limit 500
+set -euo pipefail
+set -a
+. /etc/musicapp/metier.env
+. /etc/musicapp/scripts.env
+set +a
+export HOME=/var/cache/musicapp
+cd /opt/musicapp/metier
+exec setpriv --reuid=musicapp --regid=musicapp --init-groups /opt/musicapp/venv/bin/python "$@"

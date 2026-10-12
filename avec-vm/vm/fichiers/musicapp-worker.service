@@ -1,0 +1,18 @@
+# Worker (vm-metier) : indexation Elasticsearch, envoi des emails, compteurs.
+# Si vm-donnees n'est pas encore prête, il attend ou redémarre (Restart) : pas de « depends_on » entre machines.
+[Unit]
+Description=MusicApp worker (Elasticsearch, emails, compteurs)
+After=network-online.target mailpit.service
+Wants=network-online.target
+
+[Service]
+User=musicapp
+Group=musicapp
+WorkingDirectory=/opt/musicapp/metier
+EnvironmentFile=/etc/musicapp/metier.env
+ExecStart=/opt/musicapp/venv/bin/python -m app.workers.main
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
