@@ -39,6 +39,7 @@ cd C:\Users\Utilisateur\Documents\VirtetCont\avec-docker
 | Arrêter (les données sont conservées) | `docker compose stop` |
 | État | `docker compose ps` |
 | Journaux | `docker compose logs -f api worker` |
+| Matrice de joignabilité de l'étape 14 (Ubuntu, résultat dans `avec-docker/mesures/`, synthèse dans [`mesures.md`](mesures.md)) | `bash avec-docker/joignabilite.sh` |
 | Reconstruire les index ES | `docker compose run --rm api python -m app.scripts.reindex_es` |
 | Tout supprimer, **données comprises** | `docker compose down -v` |
 

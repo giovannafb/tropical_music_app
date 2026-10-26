@@ -48,6 +48,7 @@ Le compte **admin** est créé par l'installation. Son mot de passe est la valeu
 | Démarrer (données → métier → présentation) | `bash avec-vm/demarrer.sh` |
 | Arrêter (présentation → métier → données, données conservées) | `bash avec-vm/arreter.sh` |
 | État des VM, des services et de la séparation des couches | `bash avec-vm/etat.sh` |
+| Matrice de joignabilité de l'étape 10 (résultat dans `avec-vm/mesures/`, synthèse dans [`mesures.md`](mesures.md)) | `bash avec-vm/joignabilite.sh` |
 | Envoyer le code modifié dans les VM | `bash avec-vm/deployer.sh` |
 | Ouvrir un terminal dans une VM | `bash avec-vm/ssh.sh metier` |
 | Journaux de l'API | `bash avec-vm/ssh.sh metier sudo journalctl -u 'musicapp-api@*' -f` |

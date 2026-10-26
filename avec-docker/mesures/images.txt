@@ -1,0 +1,9 @@
+musicapp-api:latest 381MB
+musicapp-migrate:latest 381MB
+musicapp-worker:latest 381MB
+musicapp-mysql:latest 1.1GB
+musicapp-nginx:latest 74.1MB
+axllent/mailpit:latest 51.1MB
+redis:7-alpine 57.8MB
+docker.elastic.co/elasticsearch/elasticsearch:8.15.3 1.96GB
+docker.elastic.co/kibana/kibana:8.15.3 1.85GB

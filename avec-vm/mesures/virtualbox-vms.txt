@@ -1,0 +1,29 @@
+"vm-donnees" {7bd30fa6-fdf8-4a88-a15f-7768d0fff93f}
+"vm-metier" {40ae8a0c-0b3a-427b-92ed-ebd6651c6013}
+"vm-presentation" {4910d187-e3be-4c36-bbbd-5deab0c27b53}
+== vm-presentation
+name="vm-presentation"
+memory=512
+cpus=1
+nic1="nat"
+Forwarding(0)="site,tcp,127.0.0.1,8081,,80"
+hostonlyadapter2="vboxnet0"
+nic2="hostonly"
+snapshots : This machine does not have any snapshots
+== vm-metier
+name="vm-metier"
+memory=1536
+cpus=2
+nic1="nat"
+Forwarding(0)="mailpit,tcp,127.0.0.1,8027,,8025"
+hostonlyadapter2="vboxnet0"
+nic2="hostonly"
+snapshots : This machine does not have any snapshots
+== vm-donnees
+name="vm-donnees"
+memory=2560
+cpus=2
+nic1="nat"
+hostonlyadapter2="vboxnet0"
+nic2="hostonly"
+snapshots : This machine does not have any snapshots
