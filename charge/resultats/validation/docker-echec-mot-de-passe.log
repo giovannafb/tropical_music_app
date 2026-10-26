@@ -1,0 +1,67 @@
+2026-10-26 17:34:47,527 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2026-10-26 17:34:47,574 INFO o.a.j.JMeter: Loading user properties from: /home/luiseyraud/.musicapp-charge/apache-jmeter-5.6.3/bin/user.properties
+2026-10-26 17:34:47,575 INFO o.a.j.JMeter: Loading system properties from: /home/luiseyraud/.musicapp-charge/apache-jmeter-5.6.3/bin/system.properties
+2026-10-26 17:34:47,588 INFO o.a.j.JMeter: Loading additional properties from: /home/luiseyraud/VirtetDock/tropical_music_app/charge/plan/resultats.properties
+2026-10-26 17:34:47,588 INFO o.a.j.JMeter: Setting JMeter property: hote=localhost
+2026-10-26 17:34:47,588 INFO o.a.j.JMeter: Setting JMeter property: port=80
+2026-10-26 17:34:47,589 INFO o.a.j.JMeter: Setting JMeter property: utilisateurs=1
+2026-10-26 17:34:47,589 INFO o.a.j.JMeter: Setting JMeter property: iterations=1
+2026-10-26 17:34:47,599 INFO o.a.j.JMeter: Setting JMeter property: montee=0
+2026-10-26 17:34:47,599 INFO o.a.j.JMeter: Setting JMeter property: duree=60
+2026-10-26 17:34:47,599 INFO o.a.j.JMeter: Setting JMeter property: comptes=/home/luiseyraud/VirtetDock/tropical_music_app/charge/comptes/comptes-invalides.csv
+2026-10-26 17:34:47,607 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2026-10-26 17:34:47,607 INFO o.a.j.JMeter: Version 5.6.3
+2026-10-26 17:34:47,607 INFO o.a.j.JMeter: java.version=21.0.13
+2026-10-26 17:34:47,607 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2026-10-26 17:34:47,607 INFO o.a.j.JMeter: os.name=Linux
+2026-10-26 17:34:47,607 INFO o.a.j.JMeter: os.arch=amd64
+2026-10-26 17:34:47,607 INFO o.a.j.JMeter: os.version=6.6.87.2-microsoft-standard-WSL2
+2026-10-26 17:34:47,607 INFO o.a.j.JMeter: file.encoding=UTF-8
+2026-10-26 17:34:47,607 INFO o.a.j.JMeter: java.awt.headless=true
+2026-10-26 17:34:47,607 INFO o.a.j.JMeter: Max memory     =1073741824
+2026-10-26 17:34:47,607 INFO o.a.j.JMeter: Available Processors =12
+2026-10-26 17:34:47,625 INFO o.a.j.JMeter: Default Locale=English (EN)
+2026-10-26 17:34:47,626 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2026-10-26 17:34:47,626 INFO o.a.j.JMeter: JMeterHome=/home/luiseyraud/.musicapp-charge/apache-jmeter-5.6.3
+2026-10-26 17:34:47,626 INFO o.a.j.JMeter: user.dir  =/home/luiseyraud/VirtetDock/tropical_music_app
+2026-10-26 17:34:47,628 INFO o.a.j.JMeter: PWD       =/home/luiseyraud/VirtetDock/tropical_music_app
+2026-10-26 17:34:47,628 INFO o.a.j.JMeter: IP: 127.0.1.1 Name: DESKTOP-8JQO488 FullName: DESKTOP-8JQO488.localdomain
+2026-10-26 17:34:47,650 INFO o.a.j.s.FileServer: Default base='/home/luiseyraud/VirtetDock/tropical_music_app'
+2026-10-26 17:34:47,656 INFO o.a.j.s.FileServer: Set new base='/home/luiseyraud/VirtetDock/tropical_music_app/charge/plan'
+2026-10-26 17:34:47,915 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2026-10-26 17:34:47,942 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2026-10-26 17:34:47,945 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2026-10-26 17:34:47,959 INFO o.a.j.s.SaveService: Loading file: /home/luiseyraud/VirtetDock/tropical_music_app/charge/plan/musicapp.jmx
+2026-10-26 17:34:48,017 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2026-10-26 17:34:48,038 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-10-26 17:34:48,039 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-10-26 17:34:48,039 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-10-26 17:34:48,039 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-10-26 17:34:48,039 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2026-10-26 17:34:48,039 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2026-10-26 17:34:48,114 INFO o.a.j.JMeter: Creating summariser <summary>
+2026-10-26 17:34:48,141 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2026-10-26 17:34:48,142 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-10-26 17:34:48,142 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-10-26 17:34:48,156 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2026-10-26 17:34:48,157 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2026-10-26 17:34:48,361 INFO o.a.j.JMeter: Running test (1793032488361)
+2026-10-26 17:34:48,420 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Utilisateurs
+2026-10-26 17:34:48,421 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Utilisateurs.
+2026-10-26 17:34:48,421 INFO o.a.j.e.StandardJMeterEngine: Thread will start next loop on error
+2026-10-26 17:34:48,421 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=0 delayedStart=false
+2026-10-26 17:34:48,436 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2026-10-26 17:34:48,436 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2026-10-26 17:34:48,505 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-1
+2026-10-26 17:34:48,506 INFO o.a.j.s.FileServer: Stored: /home/luiseyraud/VirtetDock/tropical_music_app/charge/comptes/comptes-invalides.csv
+2026-10-26 17:34:49,369 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = DESKTOP-8JQO488
+2026-10-26 17:34:49,388 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2026-10-26 17:34:49,390 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2026-10-26 17:34:49,390 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2026-10-26 17:34:49,397 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2026-10-26 17:34:49,397 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2026-10-26 17:34:49,650 INFO o.a.j.t.JMeterThread: Thread is done: Utilisateurs 1-1
+2026-10-26 17:34:49,651 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-1
+2026-10-26 17:34:49,653 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2026-10-26 17:34:49,653 INFO o.a.j.s.FileServer: Close: /home/luiseyraud/VirtetDock/tropical_music_app/charge/comptes/comptes-invalides.csv
+2026-10-26 17:34:49,656 INFO o.a.j.r.Summariser: summary =      1 in 00:00:01 =    0.8/s Avg:   181 Min:   181 Max:   181 Err:     1 (100.00%)

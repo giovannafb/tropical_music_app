@@ -1,0 +1,940 @@
+2026-10-26 19:15:58,977 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2026-10-26 19:15:58,989 INFO o.a.j.JMeter: Loading user properties from: /home/luiseyraud/.musicapp-charge/apache-jmeter-5.6.3/bin/user.properties
+2026-10-26 19:15:58,989 INFO o.a.j.JMeter: Loading system properties from: /home/luiseyraud/.musicapp-charge/apache-jmeter-5.6.3/bin/system.properties
+2026-10-26 19:15:58,989 INFO o.a.j.JMeter: Loading additional properties from: /home/luiseyraud/VirtetDock/tropical_music_app/charge/plan/resultats.properties
+2026-10-26 19:15:58,989 INFO o.a.j.JMeter: Setting JMeter property: hote=localhost
+2026-10-26 19:15:58,989 INFO o.a.j.JMeter: Setting JMeter property: port=80
+2026-10-26 19:15:58,990 INFO o.a.j.JMeter: Setting JMeter property: utilisateurs=25
+2026-10-26 19:15:58,990 INFO o.a.j.JMeter: Setting JMeter property: montee=10
+2026-10-26 19:15:58,990 INFO o.a.j.JMeter: Setting JMeter property: duree=75
+2026-10-26 19:15:58,990 INFO o.a.j.JMeter: Setting JMeter property: comptes=/home/luiseyraud/VirtetDock/tropical_music_app/charge/comptes/comptes.csv
+2026-10-26 19:15:58,990 INFO o.a.j.JMeter: Setting JMeter property: reflexion_min=500
+2026-10-26 19:15:58,990 INFO o.a.j.JMeter: Setting JMeter property: reflexion_alea=1000
+2026-10-26 19:15:58,993 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2026-10-26 19:15:58,993 INFO o.a.j.JMeter: Version 5.6.3
+2026-10-26 19:15:58,993 INFO o.a.j.JMeter: java.version=21.0.13
+2026-10-26 19:15:58,993 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2026-10-26 19:15:58,993 INFO o.a.j.JMeter: os.name=Linux
+2026-10-26 19:15:58,993 INFO o.a.j.JMeter: os.arch=amd64
+2026-10-26 19:15:58,993 INFO o.a.j.JMeter: os.version=6.6.87.2-microsoft-standard-WSL2
+2026-10-26 19:15:58,994 INFO o.a.j.JMeter: file.encoding=UTF-8
+2026-10-26 19:15:58,994 INFO o.a.j.JMeter: java.awt.headless=true
+2026-10-26 19:15:58,994 INFO o.a.j.JMeter: Max memory     =1073741824
+2026-10-26 19:15:58,994 INFO o.a.j.JMeter: Available Processors =12
+2026-10-26 19:15:59,000 INFO o.a.j.JMeter: Default Locale=English (EN)
+2026-10-26 19:15:59,001 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2026-10-26 19:15:59,001 INFO o.a.j.JMeter: JMeterHome=/home/luiseyraud/.musicapp-charge/apache-jmeter-5.6.3
+2026-10-26 19:15:59,001 INFO o.a.j.JMeter: user.dir  =/home/luiseyraud/VirtetDock/tropical_music_app
+2026-10-26 19:15:59,001 INFO o.a.j.JMeter: PWD       =/home/luiseyraud/VirtetDock/tropical_music_app
+2026-10-26 19:15:59,001 INFO o.a.j.JMeter: IP: 127.0.1.1 Name: DESKTOP-8JQO488 FullName: DESKTOP-8JQO488.localdomain
+2026-10-26 19:15:59,011 INFO o.a.j.s.FileServer: Default base='/home/luiseyraud/VirtetDock/tropical_music_app'
+2026-10-26 19:15:59,012 INFO o.a.j.s.FileServer: Set new base='/home/luiseyraud/VirtetDock/tropical_music_app/charge/plan'
+2026-10-26 19:15:59,129 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2026-10-26 19:15:59,149 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2026-10-26 19:15:59,151 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2026-10-26 19:15:59,154 INFO o.a.j.s.SaveService: Loading file: /home/luiseyraud/VirtetDock/tropical_music_app/charge/plan/musicapp.jmx
+2026-10-26 19:15:59,179 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2026-10-26 19:15:59,191 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-10-26 19:15:59,191 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-10-26 19:15:59,191 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-10-26 19:15:59,192 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-10-26 19:15:59,192 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2026-10-26 19:15:59,192 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2026-10-26 19:15:59,218 INFO o.a.j.JMeter: Creating summariser <summary>
+2026-10-26 19:15:59,227 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2026-10-26 19:15:59,228 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-10-26 19:15:59,228 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-10-26 19:15:59,232 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2026-10-26 19:15:59,232 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2026-10-26 19:15:59,301 INFO o.a.j.JMeter: Running test (1793038559301)
+2026-10-26 19:15:59,318 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Utilisateurs
+2026-10-26 19:15:59,318 INFO o.a.j.e.StandardJMeterEngine: Starting 25 threads for group Utilisateurs.
+2026-10-26 19:15:59,318 INFO o.a.j.e.StandardJMeterEngine: Thread will start next loop on error
+2026-10-26 19:15:59,319 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=25 ramp-up=10 delayedStart=false
+2026-10-26 19:15:59,339 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2026-10-26 19:15:59,339 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2026-10-26 19:15:59,366 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-1
+2026-10-26 19:15:59,367 INFO o.a.j.s.FileServer: Stored: /home/luiseyraud/VirtetDock/tropical_music_app/charge/comptes/comptes.csv
+2026-10-26 19:15:59,762 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-2
+2026-10-26 19:16:00,161 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-3
+2026-10-26 19:16:00,506 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = DESKTOP-8JQO488
+2026-10-26 19:16:00,509 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2026-10-26 19:16:00,510 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2026-10-26 19:16:00,511 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2026-10-26 19:16:00,511 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2026-10-26 19:16:00,511 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2026-10-26 19:16:00,561 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-4
+2026-10-26 19:16:00,637 INFO o.a.j.r.Summariser: summary +      1 in 00:00:01 =    0.7/s Avg:    91 Min:    91 Max:    91 Err:     0 (0.00%) Active: 4 Started: 4 Finished: 0
+2026-10-26 19:16:00,959 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-5
+2026-10-26 19:16:01,358 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-6
+2026-10-26 19:16:01,586 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:01,756 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-7
+2026-10-26 19:16:01,857 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:02,006 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:02,157 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-8
+2026-10-26 19:16:02,395 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:02,555 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-9
+2026-10-26 19:16:02,579 INFO o.a.j.u.JsseSSLManager: Using default SSL protocol: TLS
+2026-10-26 19:16:02,579 INFO o.a.j.u.JsseSSLManager: SSL session context: per-thread
+2026-10-26 19:16:02,955 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-10
+2026-10-26 19:16:03,093 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:03,209 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:03,354 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-11
+2026-10-26 19:16:03,715 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:03,754 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-12
+2026-10-26 19:16:03,872 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:04,055 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:04,153 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-13
+2026-10-26 19:16:04,448 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:04,553 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-14
+2026-10-26 19:16:04,580 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:04,590 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:04,739 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:04,903 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:04,952 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-15
+2026-10-26 19:16:05,353 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-16
+2026-10-26 19:16:05,752 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-17
+2026-10-26 19:16:05,756 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:05,795 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:05,857 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:05,932 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:05,971 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:06,083 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:06,151 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-18
+2026-10-26 19:16:06,274 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:06,285 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:06,423 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:06,425 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:06,496 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:06,551 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-19
+2026-10-26 19:16:06,950 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-20
+2026-10-26 19:16:07,003 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:07,143 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:07,227 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:07,348 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-21
+2026-10-26 19:16:07,457 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:07,684 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:07,709 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:07,733 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:07,748 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-22
+2026-10-26 19:16:07,815 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:07,862 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:07,936 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:08,104 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:08,148 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-23
+2026-10-26 19:16:08,279 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:08,290 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:08,300 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:08,547 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-24
+2026-10-26 19:16:08,602 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:08,613 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:08,627 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:08,684 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:08,689 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:08,751 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:08,947 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-25
+2026-10-26 19:16:09,014 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:09,095 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:09,296 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:09,297 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:09,357 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:09,786 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:09,792 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:09,862 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:10,032 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:10,222 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:10,246 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:10,294 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:10,341 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:10,356 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:10,380 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:10,406 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:10,428 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:10,505 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:10,632 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:10,676 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:10,811 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:10,947 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:11,019 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:11,076 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:11,093 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:11,210 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:11,277 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:11,332 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:11,346 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:11,350 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:11,639 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:11,856 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:12,035 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:12,143 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:12,311 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:12,330 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:12,460 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:12,530 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:12,530 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:12,632 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:12,664 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:12,679 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:12,765 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:12,776 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:12,903 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:13,117 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:13,156 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:13,181 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:13,240 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:13,395 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:13,470 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:13,558 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:13,562 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:13,686 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:13,743 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:13,769 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:13,795 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:13,855 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:13,948 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:14,248 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:14,314 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:14,322 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:14,340 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:14,455 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:14,562 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:14,650 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:14,698 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:14,699 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:15,048 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:15,082 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:15,118 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:15,155 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:15,215 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:15,215 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:15,346 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:15,453 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:15,537 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:15,821 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:15,825 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:15,993 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:16,000 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:16,080 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:16,124 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:16,330 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:16,351 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:16,448 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:16,549 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:16,717 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:16,759 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:16,818 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:16,929 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:17,026 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:17,173 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:17,193 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:17,207 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:17,243 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:17,305 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:17,395 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:17,469 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:17,551 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:17,626 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:17,710 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:17,924 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:17,989 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:18,248 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:18,264 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:18,361 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:18,407 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:18,436 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:18,571 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:18,585 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:18,614 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:18,620 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:18,838 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:18,847 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:18,926 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:19,042 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:19,112 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:19,163 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:19,334 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:19,400 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:19,414 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:19,486 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:19,565 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:19,680 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:19,830 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:19,842 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:19,886 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:20,253 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:20,406 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:20,470 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:20,721 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:20,722 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:20,746 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:20,776 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:20,827 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:20,833 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:20,896 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:21,146 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:21,152 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:21,158 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:21,315 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:21,328 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:21,380 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:21,451 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:21,487 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:21,542 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:21,757 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:21,768 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:21,861 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:21,884 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:22,245 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:22,359 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:22,406 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:22,480 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:22,602 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:22,645 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:22,688 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:22,695 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:22,769 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:22,932 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:22,970 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:23,174 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:23,253 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:23,347 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:23,376 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:23,434 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:23,437 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:23,469 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:23,499 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:23,516 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:23,526 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:23,699 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:24,103 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:24,194 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:24,284 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:24,370 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:24,576 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:24,748 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:24,798 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:24,881 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:24,889 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:24,890 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:24,982 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:24,988 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:25,124 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:25,165 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:25,311 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:25,337 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:25,679 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:25,718 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:25,742 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:25,905 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:25,986 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:26,069 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:26,090 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:26,115 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:26,198 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:26,251 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:26,252 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:26,297 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:26,579 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:26,761 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:26,773 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:26,950 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:26,962 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:26,980 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:26,991 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:27,018 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:27,040 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:27,057 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:27,383 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:27,593 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:27,613 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:27,713 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:27,743 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:27,743 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:27,767 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:27,978 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:28,198 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:28,204 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:28,362 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:28,407 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:28,468 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:28,551 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:28,587 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:28,635 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:28,701 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:28,709 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:28,739 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:28,743 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:28,743 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:28,842 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:28,853 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:29,188 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:29,203 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:29,207 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:29,370 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:29,581 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:29,778 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:29,862 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:30,018 INFO o.a.j.r.Summariser: summary +    585 in 00:00:29 =   19.9/s Avg:    44 Min:     5 Max:   163 Err:     0 (0.00%) Active: 25 Started: 25 Finished: 0
+2026-10-26 19:16:30,018 INFO o.a.j.r.Summariser: summary =    586 in 00:00:31 =   19.1/s Avg:    44 Min:     5 Max:   163 Err:     0 (0.00%)
+2026-10-26 19:16:30,097 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:30,122 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:30,154 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:30,172 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:30,442 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:30,539 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:30,564 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:30,638 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:30,721 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:30,738 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:30,799 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:30,807 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:30,832 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:30,878 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:30,927 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:30,998 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:31,026 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:31,117 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:31,161 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:31,363 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:31,458 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:31,837 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:31,893 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:31,897 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:31,933 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:31,944 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:32,034 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:32,096 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:32,389 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:32,607 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:32,651 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:32,768 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:32,795 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:32,805 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:32,827 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:32,919 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:33,004 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:33,015 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:33,161 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:33,184 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:33,191 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:33,249 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:33,321 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:33,526 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:33,614 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:33,726 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:33,746 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:33,771 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:34,000 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:34,136 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:34,209 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:34,281 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:34,303 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:34,371 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:34,387 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:34,486 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:34,576 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:34,699 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:34,747 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:34,861 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:34,862 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:34,896 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:34,935 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:35,064 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:35,080 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:35,202 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:35,266 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:35,442 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:35,585 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:35,644 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:35,764 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:35,766 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:35,805 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:35,814 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:36,185 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:36,215 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:36,395 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:36,424 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:36,437 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:36,490 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:36,541 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:36,562 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:36,597 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:36,605 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:36,607 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:36,614 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:36,840 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:36,848 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:36,895 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:36,981 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:37,194 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:37,391 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:37,554 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:37,614 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:37,786 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:37,800 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:37,817 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:38,079 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:38,199 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:38,333 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:38,350 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:38,447 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:38,475 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:38,586 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:38,633 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:38,764 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:38,836 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:38,984 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:38,999 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:39,013 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:39,032 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:39,295 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:39,450 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:39,451 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:39,477 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:39,505 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:39,774 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:39,818 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:39,889 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:39,905 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:40,069 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:40,106 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:40,238 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:40,244 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:40,614 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:40,619 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:40,708 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:40,739 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:40,918 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:40,985 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:40,995 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:41,031 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:41,042 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:41,059 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:41,134 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:41,254 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:41,283 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:41,446 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:41,480 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:41,506 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:41,536 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:41,560 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:41,665 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:41,759 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:42,162 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:42,446 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:42,452 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:42,489 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:42,491 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:42,537 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:42,604 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:42,657 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:42,658 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:42,768 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:42,804 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:42,898 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:42,913 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:43,027 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:43,139 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:43,313 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:43,405 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:43,442 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:43,472 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:43,579 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:43,584 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:43,709 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:43,730 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:43,768 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:43,819 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:43,857 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:43,870 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:44,330 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:44,353 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:44,531 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:44,617 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:44,667 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:44,733 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:45,027 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:45,065 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:45,088 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:45,156 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:45,156 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:45,204 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:45,228 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:45,378 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:45,624 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:45,706 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:45,706 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:45,715 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:45,739 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:45,830 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:45,851 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:45,868 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:45,940 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:46,010 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:46,261 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:46,346 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:46,398 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:46,457 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:46,758 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:46,844 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:46,877 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:46,963 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:46,975 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:46,976 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:46,979 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:46,982 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:47,115 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:47,134 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:47,157 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:47,248 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:47,270 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:47,371 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:47,648 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:47,883 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:47,939 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:47,971 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:48,014 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:48,142 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:48,238 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:48,458 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:48,476 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:48,581 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:48,663 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:48,700 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:48,952 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:48,978 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:49,003 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:49,003 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:49,005 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:49,033 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:49,057 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:49,159 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:49,178 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:49,299 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:49,354 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:49,485 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:49,624 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:49,872 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:49,915 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:49,937 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:49,946 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:50,111 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:50,163 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:50,662 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:50,698 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:50,706 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:50,733 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:50,783 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:50,810 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:50,908 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:50,911 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:50,927 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:50,944 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:51,103 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:51,233 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:51,286 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:51,296 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:51,402 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:51,493 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:51,505 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:51,570 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:51,676 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:51,883 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:51,890 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:51,984 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:52,064 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:52,216 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:52,304 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:52,318 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:52,492 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:52,550 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:52,812 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:52,855 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:52,906 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:53,044 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:53,116 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:53,239 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:53,256 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:53,309 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:53,464 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:53,466 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:53,527 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:53,622 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:53,731 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:53,848 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:54,102 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:54,312 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:54,341 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:54,369 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:54,369 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:54,382 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:54,391 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:54,428 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:54,451 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:54,470 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:54,594 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:54,718 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:54,734 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:54,953 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:54,976 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:54,982 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:55,038 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:55,072 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:55,288 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:55,392 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:55,428 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:55,556 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:55,559 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:55,864 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:55,872 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:55,952 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:55,953 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:56,021 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:56,045 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:56,118 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:56,385 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:56,481 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:56,629 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:56,633 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:56,669 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:56,706 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:56,841 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:56,848 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:56,897 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:56,919 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:56,973 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:57,017 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:57,229 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:57,247 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:57,355 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:57,369 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:57,493 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:57,670 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:57,778 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:57,938 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:58,039 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:58,078 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:58,266 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:58,269 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:58,292 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:58,324 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:58,343 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:58,352 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:58,355 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:58,402 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:58,500 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:58,716 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:58,740 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:59,124 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:59,152 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:59,164 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:59,205 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:59,260 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:59,367 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:59,620 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:59,663 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:59,684 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:59,703 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:59,747 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:16:59,963 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:00,032 INFO o.a.j.r.Summariser: summary +    725 in 00:00:30 =   24.2/s Avg:    44 Min:     4 Max:   154 Err:     0 (0.00%) Active: 25 Started: 25 Finished: 0
+2026-10-26 19:17:00,032 INFO o.a.j.r.Summariser: summary =   1311 in 00:01:01 =   21.6/s Avg:    44 Min:     4 Max:   163 Err:     0 (0.00%)
+2026-10-26 19:17:00,032 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:00,037 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:00,328 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:00,365 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:00,388 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:00,423 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:00,527 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:00,665 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:00,681 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:00,716 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:00,806 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:00,822 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:00,861 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:00,861 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:01,087 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:01,090 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:01,142 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:01,168 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:01,303 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:01,373 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:01,379 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:01,545 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:01,725 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:01,802 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:01,853 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:01,940 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:02,077 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:02,125 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:02,309 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:02,326 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:02,464 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:02,520 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:02,552 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:02,589 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:02,653 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:02,676 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:02,967 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:03,022 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:03,234 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:03,241 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:03,316 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:03,437 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:03,440 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:03,510 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:03,700 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:03,705 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:03,821 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:03,876 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:04,001 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:04,167 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:04,193 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:04,271 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:04,285 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:04,414 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:04,453 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:04,618 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:04,692 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:04,729 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:04,836 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:04,895 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:04,915 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:05,048 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:05,285 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:05,286 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:05,310 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:05,321 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:05,329 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:05,510 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:05,523 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:05,631 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:05,866 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:05,904 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:05,983 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:05,990 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:06,253 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:06,449 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:06,462 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:06,472 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:06,511 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:06,575 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:06,576 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:06,723 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:06,873 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:07,106 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:07,107 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:07,121 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:07,204 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:07,236 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:07,301 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:07,414 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:07,600 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:07,651 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:07,688 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:07,749 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:07,789 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:08,123 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:08,141 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:08,199 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:08,302 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:08,320 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:08,379 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:08,482 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:08,560 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:08,584 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:08,738 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:08,783 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:08,793 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:08,855 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:09,014 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:09,031 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:09,079 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:09,117 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:09,245 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:09,286 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:09,348 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:09,505 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:09,699 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:09,708 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:09,863 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:09,867 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:10,122 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:10,198 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:10,207 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:10,255 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:10,441 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:10,531 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:10,738 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:10,743 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:10,845 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:11,026 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:11,289 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:11,302 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:11,357 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:11,377 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:11,399 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:11,401 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:11,438 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:11,526 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:11,533 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:11,548 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:11,682 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:11,706 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:11,878 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:12,068 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:12,169 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:12,300 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:12,352 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:12,441 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:12,446 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:12,907 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:12,925 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-19
+2026-10-26 19:17:12,950 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:12,957 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-3
+2026-10-26 19:17:13,022 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:13,061 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:13,149 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-7
+2026-10-26 19:17:13,208 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:13,208 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-1
+2026-10-26 19:17:13,274 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-6
+2026-10-26 19:17:13,326 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:13,326 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-20
+2026-10-26 19:17:13,394 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:13,424 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:13,424 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-14
+2026-10-26 19:17:13,437 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:13,437 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-15
+2026-10-26 19:17:13,443 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-4
+2026-10-26 19:17:13,447 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:13,589 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:13,589 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-5
+2026-10-26 19:17:13,681 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:13,681 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:13,681 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-2
+2026-10-26 19:17:13,681 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-16
+2026-10-26 19:17:13,691 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:13,691 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-8
+2026-10-26 19:17:13,723 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:13,723 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-21
+2026-10-26 19:17:13,774 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:13,774 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-10
+2026-10-26 19:17:13,805 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-22
+2026-10-26 19:17:13,825 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:13,826 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-24
+2026-10-26 19:17:13,883 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:13,883 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-25
+2026-10-26 19:17:13,887 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-18
+2026-10-26 19:17:13,972 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:17:13,972 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-11
+2026-10-26 19:17:14,075 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-13
+2026-10-26 19:17:14,110 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-23
+2026-10-26 19:17:14,194 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-9
+2026-10-26 19:17:14,334 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-17
+2026-10-26 19:17:14,334 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-17
+2026-10-26 19:17:14,386 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-12
+2026-10-26 19:17:14,386 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-12
+2026-10-26 19:17:14,386 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2026-10-26 19:17:14,387 INFO o.a.j.s.FileServer: Close: /home/luiseyraud/VirtetDock/tropical_music_app/charge/comptes/comptes.csv
+2026-10-26 19:17:14,387 INFO o.a.j.r.Summariser: summary +    331 in 00:00:14 =   23.1/s Avg:    39 Min:     4 Max:   138 Err:     0 (0.00%) Active: 0 Started: 25 Finished: 25
+2026-10-26 19:17:14,387 INFO o.a.j.r.Summariser: summary =   1642 in 00:01:15 =   21.9/s Avg:    43 Min:     4 Max:   163 Err:     0 (0.00%)

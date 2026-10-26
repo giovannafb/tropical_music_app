@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 390" width="680" height="390" role="img" aria-label="Latence au 95e centile">
+<style>svg{--surface:#fcfcfb;--texte:#0b0b0b;--texte2:#52514e;--discret:#898781;--grille:#e1e0d9;--axe:#c3c2b7;--vm:#2a78d6;--docker:#eb6834;font-family:system-ui,-apple-system,'Segoe UI',sans-serif}@media (prefers-color-scheme:dark){svg{--surface:#1a1a19;--texte:#f0efec;--texte2:#c3c2b7;--discret:#898781;--grille:#2c2c2a;--axe:#383835;--vm:#3987e5;--docker:#d95926;}}.t{fill:var(--texte)}.t2{fill:var(--texte2)}.m{fill:var(--discret);font-variant-numeric:tabular-nums}</style>
+<rect width="680" height="390" fill="var(--surface)"/>
+<text x="64" y="28" class="t" font-size="16" font-weight="600">Latence au 95e centile</text>
+<text x="64" y="48" class="t2" font-size="12">Série « serie-1 », fenêtre de mesure de chaque palier</text>
+<line x1="64" x2="548" y1="342.0" y2="342.0" stroke="var(--grille)" stroke-width="1"/>
+<text x="56" y="346.0" class="m" font-size="11" text-anchor="end">0</text>
+<line x1="64" x2="548" y1="278.5" y2="278.5" stroke="var(--grille)" stroke-width="1"/>
+<text x="56" y="282.5" class="m" font-size="11" text-anchor="end">10000</text>
+<line x1="64" x2="548" y1="215.0" y2="215.0" stroke="var(--grille)" stroke-width="1"/>
+<text x="56" y="219.0" class="m" font-size="11" text-anchor="end">20000</text>
+<line x1="64" x2="548" y1="151.5" y2="151.5" stroke="var(--grille)" stroke-width="1"/>
+<text x="56" y="155.5" class="m" font-size="11" text-anchor="end">30000</text>
+<line x1="64" x2="548" y1="88.0" y2="88.0" stroke="var(--grille)" stroke-width="1"/>
+<text x="56" y="92.0" class="m" font-size="11" text-anchor="end">40000</text>
+<line x1="64" x2="548" y1="342.0" y2="342.0" stroke="var(--axe)" stroke-width="1"/>
+<text x="64.0" y="360" class="m" font-size="11" text-anchor="middle">0</text>
+<text x="225.3" y="360" class="m" font-size="11" text-anchor="middle">50</text>
+<text x="386.7" y="360" class="m" font-size="11" text-anchor="middle">100</text>
+<text x="548.0" y="360" class="m" font-size="11" text-anchor="middle">150</text>
+<text x="306.0" y="382" class="t2" font-size="12" text-anchor="middle">utilisateurs simultanés</text>
+<text x="14" y="215.0" class="t2" font-size="12" text-anchor="middle" transform="rotate(-90 14 215.0)">ms</text>
+<line x1="64" x2="82" y1="68" y2="68" stroke="var(--vm)" stroke-width="2" stroke-linecap="round"/>
+<text x="88" y="72" class="t2" font-size="12">3 VM</text>
+<line x1="214" x2="232" y1="68" y2="68" stroke="var(--docker)" stroke-width="2" stroke-linecap="round"/>
+<text x="238" y="72" class="t2" font-size="12">3 conteneurs</text>
+<path d="M67.2,340.7 L96.3,338.0 L144.7,322.2 L225.3,312.6 L386.7,266.3 L548.0,151.3" fill="none" stroke="var(--vm)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="67.2" cy="340.7" r="4" fill="var(--vm)" stroke="var(--surface)" stroke-width="2"><title>3 VM — 1 utilisateurs : 200 ms</title></circle>
+<circle cx="96.3" cy="338.0" r="4" fill="var(--vm)" stroke="var(--surface)" stroke-width="2"><title>3 VM — 10 utilisateurs : 625 ms</title></circle>
+<circle cx="144.7" cy="322.2" r="4" fill="var(--vm)" stroke="var(--surface)" stroke-width="2"><title>3 VM — 25 utilisateurs : 3121 ms</title></circle>
+<circle cx="225.3" cy="312.6" r="4" fill="var(--vm)" stroke="var(--surface)" stroke-width="2"><title>3 VM — 50 utilisateurs : 4629 ms</title></circle>
+<circle cx="386.7" cy="266.3" r="4" fill="var(--vm)" stroke="var(--surface)" stroke-width="2"><title>3 VM — 100 utilisateurs : 11920 ms</title></circle>
+<circle cx="548.0" cy="151.3" r="4" fill="var(--vm)" stroke="var(--surface)" stroke-width="2"><title>3 VM — 150 utilisateurs : 30031 ms</title></circle>
+<path d="M67.2,341.5 L96.3,341.5 L144.7,341.3 L225.3,340.0 L386.7,327.4 L548.0,312.8" fill="none" stroke="var(--docker)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="67.2" cy="341.5" r="4" fill="var(--docker)" stroke="var(--surface)" stroke-width="2"><title>3 conteneurs — 1 utilisateurs : 78 ms</title></circle>
+<circle cx="96.3" cy="341.5" r="4" fill="var(--docker)" stroke="var(--surface)" stroke-width="2"><title>3 conteneurs — 10 utilisateurs : 84 ms</title></circle>
+<circle cx="144.7" cy="341.3" r="4" fill="var(--docker)" stroke="var(--surface)" stroke-width="2"><title>3 conteneurs — 25 utilisateurs : 107 ms</title></circle>
+<circle cx="225.3" cy="340.0" r="4" fill="var(--docker)" stroke="var(--surface)" stroke-width="2"><title>3 conteneurs — 50 utilisateurs : 309 ms</title></circle>
+<circle cx="386.7" cy="327.4" r="4" fill="var(--docker)" stroke="var(--surface)" stroke-width="2"><title>3 conteneurs — 100 utilisateurs : 2303 ms</title></circle>
+<circle cx="548.0" cy="312.8" r="4" fill="var(--docker)" stroke="var(--surface)" stroke-width="2"><title>3 conteneurs — 150 utilisateurs : 4601 ms</title></circle>
+<line x1="554.0" x2="558" y1="151.3" y2="151.3" stroke="var(--axe)" stroke-width="1"/>
+<text x="562" y="155.3" class="t" font-size="12">3 VM : 30031</text>
+<line x1="554.0" x2="558" y1="312.8" y2="312.8" stroke="var(--axe)" stroke-width="1"/>
+<text x="562" y="316.8" class="t" font-size="12">3 conteneurs : 4601</text>
+</svg>

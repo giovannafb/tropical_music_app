@@ -1,0 +1,7 @@
+workers_relances=21
+workers_hors_delai=0
+erreurs_nginx=1755
+vm-donnees_tues_memoire=0
+vm-metier_tues_memoire=13
+vm-presentation_tues_memoire=0
+retour_au_repos_s=10

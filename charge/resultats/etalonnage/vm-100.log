@@ -1,0 +1,367 @@
+2026-10-26 18:04:25,163 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2026-10-26 18:04:25,191 INFO o.a.j.JMeter: Loading user properties from: /home/luiseyraud/.musicapp-charge/apache-jmeter-5.6.3/bin/user.properties
+2026-10-26 18:04:25,191 INFO o.a.j.JMeter: Loading system properties from: /home/luiseyraud/.musicapp-charge/apache-jmeter-5.6.3/bin/system.properties
+2026-10-26 18:04:25,191 INFO o.a.j.JMeter: Loading additional properties from: /home/luiseyraud/VirtetDock/tropical_music_app/charge/plan/resultats.properties
+2026-10-26 18:04:25,193 INFO o.a.j.JMeter: Setting JMeter property: hote=192.168.56.11
+2026-10-26 18:04:25,193 INFO o.a.j.JMeter: Setting JMeter property: port=80
+2026-10-26 18:04:25,193 INFO o.a.j.JMeter: Setting JMeter property: utilisateurs=100
+2026-10-26 18:04:25,193 INFO o.a.j.JMeter: Setting JMeter property: montee=10
+2026-10-26 18:04:25,193 INFO o.a.j.JMeter: Setting JMeter property: duree=75
+2026-10-26 18:04:25,193 INFO o.a.j.JMeter: Setting JMeter property: chemin=/assets/placeholder-cover.svg
+2026-10-26 18:04:25,193 INFO o.a.j.JMeter: Setting JMeter property: httpclient.reset_state_on_thread_group_iteration=false
+2026-10-26 18:04:25,200 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2026-10-26 18:04:25,200 INFO o.a.j.JMeter: Version 5.6.3
+2026-10-26 18:04:25,200 INFO o.a.j.JMeter: java.version=21.0.13
+2026-10-26 18:04:25,200 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2026-10-26 18:04:25,200 INFO o.a.j.JMeter: os.name=Linux
+2026-10-26 18:04:25,200 INFO o.a.j.JMeter: os.arch=amd64
+2026-10-26 18:04:25,200 INFO o.a.j.JMeter: os.version=6.6.87.2-microsoft-standard-WSL2
+2026-10-26 18:04:25,200 INFO o.a.j.JMeter: file.encoding=UTF-8
+2026-10-26 18:04:25,200 INFO o.a.j.JMeter: java.awt.headless=true
+2026-10-26 18:04:25,200 INFO o.a.j.JMeter: Max memory     =1073741824
+2026-10-26 18:04:25,201 INFO o.a.j.JMeter: Available Processors =12
+2026-10-26 18:04:25,213 INFO o.a.j.JMeter: Default Locale=English (EN)
+2026-10-26 18:04:25,213 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2026-10-26 18:04:25,213 INFO o.a.j.JMeter: JMeterHome=/home/luiseyraud/.musicapp-charge/apache-jmeter-5.6.3
+2026-10-26 18:04:25,214 INFO o.a.j.JMeter: user.dir  =/home/luiseyraud/VirtetDock/tropical_music_app
+2026-10-26 18:04:25,214 INFO o.a.j.JMeter: PWD       =/home/luiseyraud/VirtetDock/tropical_music_app
+2026-10-26 18:04:25,214 INFO o.a.j.JMeter: IP: 127.0.1.1 Name: DESKTOP-8JQO488 FullName: DESKTOP-8JQO488.localdomain
+2026-10-26 18:04:25,232 INFO o.a.j.s.FileServer: Default base='/home/luiseyraud/VirtetDock/tropical_music_app'
+2026-10-26 18:04:25,234 INFO o.a.j.s.FileServer: Set new base='/home/luiseyraud/VirtetDock/tropical_music_app/charge/plan'
+2026-10-26 18:04:25,444 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2026-10-26 18:04:25,480 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2026-10-26 18:04:25,484 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2026-10-26 18:04:25,488 INFO o.a.j.s.SaveService: Loading file: /home/luiseyraud/VirtetDock/tropical_music_app/charge/plan/etalonnage.jmx
+2026-10-26 18:04:25,562 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-10-26 18:04:25,562 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-10-26 18:04:25,562 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-10-26 18:04:25,563 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-10-26 18:04:25,563 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2026-10-26 18:04:25,563 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2026-10-26 18:04:25,577 INFO o.a.j.JMeter: Creating summariser <summary>
+2026-10-26 18:04:25,609 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2026-10-26 18:04:25,611 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-10-26 18:04:25,611 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-10-26 18:04:25,617 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2026-10-26 18:04:25,617 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2026-10-26 18:04:25,722 INFO o.a.j.JMeter: Running test (1793034265722)
+2026-10-26 18:04:25,756 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Utilisateurs
+2026-10-26 18:04:25,757 INFO o.a.j.e.StandardJMeterEngine: Starting 100 threads for group Utilisateurs.
+2026-10-26 18:04:25,757 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2026-10-26 18:04:25,757 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=100 ramp-up=10 delayedStart=false
+2026-10-26 18:04:25,766 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-1
+2026-10-26 18:04:25,789 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = DESKTOP-8JQO488
+2026-10-26 18:04:25,798 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2026-10-26 18:04:25,802 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2026-10-26 18:04:25,802 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2026-10-26 18:04:25,803 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2026-10-26 18:04:25,803 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2026-10-26 18:04:25,838 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2026-10-26 18:04:25,838 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2026-10-26 18:04:25,861 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-2
+2026-10-26 18:04:25,959 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-3
+2026-10-26 18:04:26,060 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-4
+2026-10-26 18:04:26,159 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-5
+2026-10-26 18:04:26,259 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-6
+2026-10-26 18:04:26,359 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-7
+2026-10-26 18:04:26,459 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-8
+2026-10-26 18:04:26,560 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-9
+2026-10-26 18:04:26,659 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-10
+2026-10-26 18:04:26,759 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-11
+2026-10-26 18:04:26,860 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-12
+2026-10-26 18:04:26,959 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-13
+2026-10-26 18:04:27,059 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-14
+2026-10-26 18:04:27,159 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-15
+2026-10-26 18:04:27,261 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-16
+2026-10-26 18:04:27,361 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-17
+2026-10-26 18:04:27,460 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-18
+2026-10-26 18:04:27,560 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-19
+2026-10-26 18:04:27,659 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-20
+2026-10-26 18:04:27,759 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-21
+2026-10-26 18:04:27,859 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-22
+2026-10-26 18:04:27,959 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-23
+2026-10-26 18:04:28,060 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-24
+2026-10-26 18:04:28,159 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-25
+2026-10-26 18:04:28,258 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-26
+2026-10-26 18:04:28,360 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-27
+2026-10-26 18:04:28,459 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-28
+2026-10-26 18:04:28,561 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-29
+2026-10-26 18:04:28,659 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-30
+2026-10-26 18:04:28,758 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-31
+2026-10-26 18:04:28,859 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-32
+2026-10-26 18:04:28,959 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-33
+2026-10-26 18:04:29,060 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-34
+2026-10-26 18:04:29,159 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-35
+2026-10-26 18:04:29,259 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-36
+2026-10-26 18:04:29,358 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-37
+2026-10-26 18:04:29,459 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-38
+2026-10-26 18:04:29,559 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-39
+2026-10-26 18:04:29,660 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-40
+2026-10-26 18:04:29,758 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-41
+2026-10-26 18:04:29,860 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-42
+2026-10-26 18:04:29,962 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-43
+2026-10-26 18:04:30,001 INFO o.a.j.r.Summariser: summary +  16209 in 00:00:04 = 3788.9/s Avg:     5 Min:     0 Max:    40 Err:     0 (0.00%) Active: 43 Started: 43 Finished: 0
+2026-10-26 18:04:30,059 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-44
+2026-10-26 18:04:30,158 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-45
+2026-10-26 18:04:30,260 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-46
+2026-10-26 18:04:30,359 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-47
+2026-10-26 18:04:30,459 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-48
+2026-10-26 18:04:30,559 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-49
+2026-10-26 18:04:30,660 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-50
+2026-10-26 18:04:30,758 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-51
+2026-10-26 18:04:30,860 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-52
+2026-10-26 18:04:30,960 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-53
+2026-10-26 18:04:31,060 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-54
+2026-10-26 18:04:31,160 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-55
+2026-10-26 18:04:31,259 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-56
+2026-10-26 18:04:31,358 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-57
+2026-10-26 18:04:31,459 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-58
+2026-10-26 18:04:31,559 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-59
+2026-10-26 18:04:31,659 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-60
+2026-10-26 18:04:31,760 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-61
+2026-10-26 18:04:31,859 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-62
+2026-10-26 18:04:31,959 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-63
+2026-10-26 18:04:32,061 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-64
+2026-10-26 18:04:32,159 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-65
+2026-10-26 18:04:32,259 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-66
+2026-10-26 18:04:32,359 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-67
+2026-10-26 18:04:32,461 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-68
+2026-10-26 18:04:32,560 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-69
+2026-10-26 18:04:32,660 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-70
+2026-10-26 18:04:32,758 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-71
+2026-10-26 18:04:32,859 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-72
+2026-10-26 18:04:32,959 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-73
+2026-10-26 18:04:33,058 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-74
+2026-10-26 18:04:33,160 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-75
+2026-10-26 18:04:33,259 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-76
+2026-10-26 18:04:33,360 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-77
+2026-10-26 18:04:33,460 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-78
+2026-10-26 18:04:33,560 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-79
+2026-10-26 18:04:33,658 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-80
+2026-10-26 18:04:33,759 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-81
+2026-10-26 18:04:33,859 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-82
+2026-10-26 18:04:33,959 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-83
+2026-10-26 18:04:34,063 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-84
+2026-10-26 18:04:34,158 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-85
+2026-10-26 18:04:34,263 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-86
+2026-10-26 18:04:34,359 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-87
+2026-10-26 18:04:34,459 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-88
+2026-10-26 18:04:34,558 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-89
+2026-10-26 18:04:34,659 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-90
+2026-10-26 18:04:34,760 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-91
+2026-10-26 18:04:34,860 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-92
+2026-10-26 18:04:34,960 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-93
+2026-10-26 18:04:35,060 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-94
+2026-10-26 18:04:35,160 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-95
+2026-10-26 18:04:35,259 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-96
+2026-10-26 18:04:35,359 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-97
+2026-10-26 18:04:35,460 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-98
+2026-10-26 18:04:35,559 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-99
+2026-10-26 18:04:35,659 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-100
+2026-10-26 18:05:00,000 INFO o.a.j.r.Summariser: summary + 126840 in 00:00:30 = 4228.0/s Avg:    22 Min:     6 Max:   527 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2026-10-26 18:05:00,001 INFO o.a.j.r.Summariser: summary = 143049 in 00:00:34 = 4173.2/s Avg:    20 Min:     0 Max:   527 Err:     0 (0.00%)
+2026-10-26 18:05:30,000 INFO o.a.j.r.Summariser: summary + 131732 in 00:00:30 = 4391.1/s Avg:    22 Min:    11 Max:    65 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2026-10-26 18:05:30,000 INFO o.a.j.r.Summariser: summary = 274781 in 00:01:04 = 4274.9/s Avg:    21 Min:     0 Max:   527 Err:     0 (0.00%)
+2026-10-26 18:05:40,769 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-1
+2026-10-26 18:05:40,769 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-1
+2026-10-26 18:05:40,770 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-3
+2026-10-26 18:05:40,770 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-3
+2026-10-26 18:05:40,771 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-4
+2026-10-26 18:05:40,771 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-4
+2026-10-26 18:05:40,772 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-6
+2026-10-26 18:05:40,772 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-6
+2026-10-26 18:05:40,773 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-14
+2026-10-26 18:05:40,773 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-14
+2026-10-26 18:05:40,774 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-2
+2026-10-26 18:05:40,774 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-10
+2026-10-26 18:05:40,774 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-16
+2026-10-26 18:05:40,774 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-10
+2026-10-26 18:05:40,774 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-2
+2026-10-26 18:05:40,775 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-16
+2026-10-26 18:05:40,775 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-12
+2026-10-26 18:05:40,775 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-12
+2026-10-26 18:05:40,775 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-5
+2026-10-26 18:05:40,775 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-5
+2026-10-26 18:05:40,776 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-13
+2026-10-26 18:05:40,776 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-13
+2026-10-26 18:05:40,776 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-9
+2026-10-26 18:05:40,776 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-9
+2026-10-26 18:05:40,779 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-11
+2026-10-26 18:05:40,779 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-11
+2026-10-26 18:05:40,785 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-21
+2026-10-26 18:05:40,785 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-21
+2026-10-26 18:05:40,786 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-25
+2026-10-26 18:05:40,786 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-25
+2026-10-26 18:05:40,787 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-24
+2026-10-26 18:05:40,787 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-24
+2026-10-26 18:05:40,788 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-32
+2026-10-26 18:05:40,788 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-32
+2026-10-26 18:05:40,789 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-31
+2026-10-26 18:05:40,789 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-31
+2026-10-26 18:05:40,789 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-7
+2026-10-26 18:05:40,789 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-7
+2026-10-26 18:05:40,790 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-18
+2026-10-26 18:05:40,790 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-18
+2026-10-26 18:05:40,791 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-15
+2026-10-26 18:05:40,791 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-15
+2026-10-26 18:05:40,791 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-17
+2026-10-26 18:05:40,791 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-17
+2026-10-26 18:05:40,791 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-35
+2026-10-26 18:05:40,791 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-35
+2026-10-26 18:05:40,792 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-19
+2026-10-26 18:05:40,792 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-19
+2026-10-26 18:05:40,793 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-8
+2026-10-26 18:05:40,793 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-8
+2026-10-26 18:05:40,794 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-20
+2026-10-26 18:05:40,794 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-20
+2026-10-26 18:05:40,794 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-30
+2026-10-26 18:05:40,794 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-30
+2026-10-26 18:05:40,794 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-42
+2026-10-26 18:05:40,795 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-42
+2026-10-26 18:05:40,795 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-28
+2026-10-26 18:05:40,795 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-28
+2026-10-26 18:05:40,795 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-27
+2026-10-26 18:05:40,795 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-27
+2026-10-26 18:05:40,796 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-29
+2026-10-26 18:05:40,796 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-29
+2026-10-26 18:05:40,796 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-36
+2026-10-26 18:05:40,796 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-36
+2026-10-26 18:05:40,800 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-43
+2026-10-26 18:05:40,800 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-43
+2026-10-26 18:05:40,801 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-33
+2026-10-26 18:05:40,801 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-33
+2026-10-26 18:05:40,801 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-44
+2026-10-26 18:05:40,801 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-44
+2026-10-26 18:05:40,802 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-23
+2026-10-26 18:05:40,802 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-23
+2026-10-26 18:05:40,803 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-26
+2026-10-26 18:05:40,803 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-26
+2026-10-26 18:05:40,804 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-41
+2026-10-26 18:05:40,804 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-41
+2026-10-26 18:05:40,804 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-22
+2026-10-26 18:05:40,804 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-22
+2026-10-26 18:05:40,805 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-34
+2026-10-26 18:05:40,805 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-34
+2026-10-26 18:05:40,805 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-46
+2026-10-26 18:05:40,805 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-46
+2026-10-26 18:05:40,807 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-47
+2026-10-26 18:05:40,807 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-47
+2026-10-26 18:05:40,808 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-38
+2026-10-26 18:05:40,808 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-38
+2026-10-26 18:05:40,808 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-39
+2026-10-26 18:05:40,809 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-39
+2026-10-26 18:05:40,809 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-53
+2026-10-26 18:05:40,809 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-53
+2026-10-26 18:05:40,809 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-49
+2026-10-26 18:05:40,809 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-49
+2026-10-26 18:05:40,811 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-45
+2026-10-26 18:05:40,811 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-45
+2026-10-26 18:05:40,812 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-50
+2026-10-26 18:05:40,812 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-50
+2026-10-26 18:05:40,812 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-51
+2026-10-26 18:05:40,813 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-51
+2026-10-26 18:05:40,814 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-37
+2026-10-26 18:05:40,814 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-37
+2026-10-26 18:05:40,814 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-40
+2026-10-26 18:05:40,814 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-40
+2026-10-26 18:05:40,814 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-52
+2026-10-26 18:05:40,814 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-52
+2026-10-26 18:05:40,819 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-71
+2026-10-26 18:05:40,819 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-71
+2026-10-26 18:05:40,820 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-64
+2026-10-26 18:05:40,820 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-64
+2026-10-26 18:05:40,821 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-63
+2026-10-26 18:05:40,821 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-63
+2026-10-26 18:05:40,821 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-74
+2026-10-26 18:05:40,822 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-74
+2026-10-26 18:05:40,822 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-59
+2026-10-26 18:05:40,822 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-59
+2026-10-26 18:05:40,822 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-54
+2026-10-26 18:05:40,822 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-54
+2026-10-26 18:05:40,823 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-55
+2026-10-26 18:05:40,823 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-55
+2026-10-26 18:05:40,824 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-56
+2026-10-26 18:05:40,824 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-48
+2026-10-26 18:05:40,824 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-56
+2026-10-26 18:05:40,824 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-48
+2026-10-26 18:05:40,825 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-62
+2026-10-26 18:05:40,825 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-62
+2026-10-26 18:05:40,825 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-66
+2026-10-26 18:05:40,825 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-66
+2026-10-26 18:05:40,825 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-58
+2026-10-26 18:05:40,825 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-58
+2026-10-26 18:05:40,825 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-72
+2026-10-26 18:05:40,825 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-72
+2026-10-26 18:05:40,826 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-68
+2026-10-26 18:05:40,826 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-68
+2026-10-26 18:05:40,826 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-84
+2026-10-26 18:05:40,826 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-57
+2026-10-26 18:05:40,826 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-84
+2026-10-26 18:05:40,826 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-61
+2026-10-26 18:05:40,826 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-57
+2026-10-26 18:05:40,827 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-61
+2026-10-26 18:05:40,828 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-65
+2026-10-26 18:05:40,828 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-65
+2026-10-26 18:05:40,828 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-60
+2026-10-26 18:05:40,828 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-60
+2026-10-26 18:05:40,829 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-80
+2026-10-26 18:05:40,829 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-80
+2026-10-26 18:05:40,830 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-82
+2026-10-26 18:05:40,830 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-82
+2026-10-26 18:05:40,830 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-79
+2026-10-26 18:05:40,830 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-79
+2026-10-26 18:05:40,830 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-77
+2026-10-26 18:05:40,830 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-77
+2026-10-26 18:05:40,831 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-67
+2026-10-26 18:05:40,831 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-67
+2026-10-26 18:05:40,832 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-75
+2026-10-26 18:05:40,832 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-75
+2026-10-26 18:05:40,832 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-88
+2026-10-26 18:05:40,832 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-88
+2026-10-26 18:05:40,832 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-69
+2026-10-26 18:05:40,832 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-69
+2026-10-26 18:05:40,832 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-78
+2026-10-26 18:05:40,832 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-78
+2026-10-26 18:05:40,832 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-76
+2026-10-26 18:05:40,832 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-76
+2026-10-26 18:05:40,833 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-73
+2026-10-26 18:05:40,833 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-73
+2026-10-26 18:05:40,834 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-70
+2026-10-26 18:05:40,834 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-70
+2026-10-26 18:05:40,835 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-90
+2026-10-26 18:05:40,835 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-90
+2026-10-26 18:05:40,836 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-93
+2026-10-26 18:05:40,836 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-93
+2026-10-26 18:05:40,836 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-81
+2026-10-26 18:05:40,837 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-81
+2026-10-26 18:05:40,837 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-97
+2026-10-26 18:05:40,837 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-97
+2026-10-26 18:05:40,838 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-83
+2026-10-26 18:05:40,838 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-83
+2026-10-26 18:05:40,838 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-85
+2026-10-26 18:05:40,838 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-85
+2026-10-26 18:05:40,838 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-87
+2026-10-26 18:05:40,838 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-87
+2026-10-26 18:05:40,839 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-86
+2026-10-26 18:05:40,839 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-86
+2026-10-26 18:05:40,840 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-91
+2026-10-26 18:05:40,840 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-91
+2026-10-26 18:05:40,840 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-89
+2026-10-26 18:05:40,841 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-89
+2026-10-26 18:05:40,841 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-92
+2026-10-26 18:05:40,841 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-92
+2026-10-26 18:05:40,841 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-96
+2026-10-26 18:05:40,842 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-96
+2026-10-26 18:05:40,842 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-94
+2026-10-26 18:05:40,842 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-94
+2026-10-26 18:05:40,843 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-95
+2026-10-26 18:05:40,843 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-95
+2026-10-26 18:05:40,843 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-98
+2026-10-26 18:05:40,843 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-98
+2026-10-26 18:05:40,844 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-99
+2026-10-26 18:05:40,844 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-100
+2026-10-26 18:05:40,844 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-99
+2026-10-26 18:05:40,844 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-100
+2026-10-26 18:05:40,844 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2026-10-26 18:05:40,846 INFO o.a.j.r.Summariser: summary +  46582 in 00:00:11 = 4295.3/s Avg:    24 Min:     8 Max:   100 Err:     0 (0.00%) Active: 0 Started: 100 Finished: 100
+2026-10-26 18:05:40,846 INFO o.a.j.r.Summariser: summary = 321363 in 00:01:15 = 4277.8/s Avg:    22 Min:     0 Max:   527 Err:     0 (0.00%)

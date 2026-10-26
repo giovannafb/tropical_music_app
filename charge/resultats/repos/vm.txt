@@ -1,0 +1,12 @@
+# Mesures de référence (étapes 10 et 14) — déploiement vm — 2026-10-26T21:36:47+01:00
+# démarrage : de l'arrêt complet au parcours connexion + likes réussi ; mémoire : WSL au repos (60 s) moins WSL à vide ;
+# latence : médiane de 10 GET /api/me/likes/tracks au repos ; charge : charge moyenne de l'hôte sur 1 min au moment de la mesure
+cible=http://192.168.56.11:80
+memoire_a_vide_mo=1465
+execution_1=demarrage 99.7 s, memoire 3597 Mo, latence 21.7 ms, charge 0.64
+execution_2=demarrage 111.7 s, memoire 3621 Mo, latence 52.2 ms, charge 0.68
+execution_3=demarrage 109.1 s, memoire 3656 Mo, latence 26.5 ms, charge 0.89
+demarrage_median_s=109.1
+memoire_repos_mediane_mo=3621
+latence_mediane_ms=26.5
+empreinte_disque=10148 Mo de disques de VM (~/VirtualBox VMs/MusicApp)

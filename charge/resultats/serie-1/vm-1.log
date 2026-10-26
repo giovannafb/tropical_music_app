@@ -1,0 +1,108 @@
+2026-10-26 19:25:46,416 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2026-10-26 19:25:46,434 INFO o.a.j.JMeter: Loading user properties from: /home/luiseyraud/.musicapp-charge/apache-jmeter-5.6.3/bin/user.properties
+2026-10-26 19:25:46,435 INFO o.a.j.JMeter: Loading system properties from: /home/luiseyraud/.musicapp-charge/apache-jmeter-5.6.3/bin/system.properties
+2026-10-26 19:25:46,435 INFO o.a.j.JMeter: Loading additional properties from: /home/luiseyraud/VirtetDock/tropical_music_app/charge/plan/resultats.properties
+2026-10-26 19:25:46,436 INFO o.a.j.JMeter: Setting JMeter property: hote=192.168.56.11
+2026-10-26 19:25:46,436 INFO o.a.j.JMeter: Setting JMeter property: port=80
+2026-10-26 19:25:46,436 INFO o.a.j.JMeter: Setting JMeter property: utilisateurs=1
+2026-10-26 19:25:46,436 INFO o.a.j.JMeter: Setting JMeter property: montee=10
+2026-10-26 19:25:46,437 INFO o.a.j.JMeter: Setting JMeter property: duree=75
+2026-10-26 19:25:46,437 INFO o.a.j.JMeter: Setting JMeter property: comptes=/home/luiseyraud/VirtetDock/tropical_music_app/charge/comptes/comptes.csv
+2026-10-26 19:25:46,437 INFO o.a.j.JMeter: Setting JMeter property: reflexion_min=500
+2026-10-26 19:25:46,437 INFO o.a.j.JMeter: Setting JMeter property: reflexion_alea=1000
+2026-10-26 19:25:46,442 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2026-10-26 19:25:46,443 INFO o.a.j.JMeter: Version 5.6.3
+2026-10-26 19:25:46,443 INFO o.a.j.JMeter: java.version=21.0.13
+2026-10-26 19:25:46,443 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2026-10-26 19:25:46,443 INFO o.a.j.JMeter: os.name=Linux
+2026-10-26 19:25:46,443 INFO o.a.j.JMeter: os.arch=amd64
+2026-10-26 19:25:46,443 INFO o.a.j.JMeter: os.version=6.6.87.2-microsoft-standard-WSL2
+2026-10-26 19:25:46,443 INFO o.a.j.JMeter: file.encoding=UTF-8
+2026-10-26 19:25:46,443 INFO o.a.j.JMeter: java.awt.headless=true
+2026-10-26 19:25:46,443 INFO o.a.j.JMeter: Max memory     =1073741824
+2026-10-26 19:25:46,443 INFO o.a.j.JMeter: Available Processors =12
+2026-10-26 19:25:46,453 INFO o.a.j.JMeter: Default Locale=English (EN)
+2026-10-26 19:25:46,453 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2026-10-26 19:25:46,453 INFO o.a.j.JMeter: JMeterHome=/home/luiseyraud/.musicapp-charge/apache-jmeter-5.6.3
+2026-10-26 19:25:46,453 INFO o.a.j.JMeter: user.dir  =/home/luiseyraud/VirtetDock/tropical_music_app
+2026-10-26 19:25:46,454 INFO o.a.j.JMeter: PWD       =/home/luiseyraud/VirtetDock/tropical_music_app
+2026-10-26 19:25:46,454 INFO o.a.j.JMeter: IP: 127.0.1.1 Name: DESKTOP-8JQO488 FullName: DESKTOP-8JQO488.localdomain
+2026-10-26 19:25:46,466 INFO o.a.j.s.FileServer: Default base='/home/luiseyraud/VirtetDock/tropical_music_app'
+2026-10-26 19:25:46,468 INFO o.a.j.s.FileServer: Set new base='/home/luiseyraud/VirtetDock/tropical_music_app/charge/plan'
+2026-10-26 19:25:46,649 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2026-10-26 19:25:46,682 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2026-10-26 19:25:46,685 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2026-10-26 19:25:46,690 INFO o.a.j.s.SaveService: Loading file: /home/luiseyraud/VirtetDock/tropical_music_app/charge/plan/musicapp.jmx
+2026-10-26 19:25:46,732 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2026-10-26 19:25:46,749 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-10-26 19:25:46,749 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-10-26 19:25:46,749 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-10-26 19:25:46,749 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-10-26 19:25:46,749 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2026-10-26 19:25:46,749 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2026-10-26 19:25:46,781 INFO o.a.j.JMeter: Creating summariser <summary>
+2026-10-26 19:25:46,792 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2026-10-26 19:25:46,793 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-10-26 19:25:46,793 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-10-26 19:25:46,797 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2026-10-26 19:25:46,797 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2026-10-26 19:25:46,873 INFO o.a.j.JMeter: Running test (1793039146872)
+2026-10-26 19:25:46,895 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Utilisateurs
+2026-10-26 19:25:46,895 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Utilisateurs.
+2026-10-26 19:25:46,895 INFO o.a.j.e.StandardJMeterEngine: Thread will start next loop on error
+2026-10-26 19:25:46,895 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=10 delayedStart=false
+2026-10-26 19:25:46,900 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2026-10-26 19:25:46,901 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2026-10-26 19:25:46,930 INFO o.a.j.t.JMeterThread: Thread started: Utilisateurs 1-1
+2026-10-26 19:25:46,932 INFO o.a.j.s.FileServer: Stored: /home/luiseyraud/VirtetDock/tropical_music_app/charge/comptes/comptes.csv
+2026-10-26 19:25:47,930 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = DESKTOP-8JQO488
+2026-10-26 19:25:47,933 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2026-10-26 19:25:47,934 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2026-10-26 19:25:47,934 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2026-10-26 19:25:47,935 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2026-10-26 19:25:47,935 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2026-10-26 19:25:49,424 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:25:50,136 INFO o.a.j.u.JsseSSLManager: Using default SSL protocol: TLS
+2026-10-26 19:25:50,136 INFO o.a.j.u.JsseSSLManager: SSL session context: per-thread
+2026-10-26 19:25:51,005 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:25:53,266 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:25:55,899 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:25:58,013 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:26:00,987 INFO o.a.j.r.Summariser: summary +     12 in 00:00:14 =    0.9/s Avg:   122 Min:    29 Max:   285 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+2026-10-26 19:26:00,988 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:26:03,337 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:26:05,925 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:26:08,382 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:26:11,070 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:26:13,765 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:26:16,064 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:26:18,563 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:26:21,410 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:26:23,758 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:26:25,197 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:26:27,271 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:26:29,529 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:26:30,954 INFO o.a.j.r.Summariser: summary +     25 in 00:00:30 =    0.8/s Avg:   109 Min:    24 Max:   206 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+2026-10-26 19:26:30,955 INFO o.a.j.r.Summariser: summary =     37 in 00:00:44 =    0.8/s Avg:   113 Min:    24 Max:   285 Err:     0 (0.00%)
+2026-10-26 19:26:31,993 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:26:34,249 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:26:36,603 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:26:39,072 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:26:41,423 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:26:43,586 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:26:46,301 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:26:48,176 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:26:50,670 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:26:52,767 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:26:54,703 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:26:56,637 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:26:58,686 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:27:00,767 INFO o.a.j.r.Summariser: summary +     27 in 00:00:30 =    0.9/s Avg:   100 Min:    15 Max:   234 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+2026-10-26 19:27:00,768 INFO o.a.j.r.Summariser: summary =     64 in 00:01:14 =    0.9/s Avg:   108 Min:    15 Max:   285 Err:     0 (0.00%)
+2026-10-26 19:27:00,768 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager Gestionnaire de cookies superseded by Gestionnaire de cookies
+2026-10-26 19:27:02,016 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Utilisateurs 1-1
+2026-10-26 19:27:02,017 INFO o.a.j.t.JMeterThread: Thread finished: Utilisateurs 1-1
+2026-10-26 19:27:02,018 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2026-10-26 19:27:02,018 INFO o.a.j.s.FileServer: Close: /home/luiseyraud/VirtetDock/tropical_music_app/charge/comptes/comptes.csv
+2026-10-26 19:27:02,020 INFO o.a.j.r.Summariser: summary +      1 in 00:00:01 =    0.8/s Avg:   183 Min:   183 Max:   183 Err:     0 (0.00%) Active: 0 Started: 1 Finished: 1
+2026-10-26 19:27:02,021 INFO o.a.j.r.Summariser: summary =     65 in 00:01:15 =    0.9/s Avg:   109 Min:    15 Max:   285 Err:     0 (0.00%)

@@ -1,0 +1,13 @@
+Validation du plan charge/plan/musicapp.jmx — déploiement vm (http://192.168.56.11:80) — 2026-10-26T18:00:16+01:00
+1 utilisateur, 1 itération ; fichiers bruts : vm-<cas>.csv
+
+== Parcours réussi (compte du fichier de comptes) : conforme à l'attendu
+    1-Connexion      HTTP 200    283 ms  réussie
+    2-Titres-likes   HTTP 200    150 ms  réussie
+
+== Doit échouer : mauvais mot de passe : conforme à l'attendu
+    1-Connexion      HTTP 401    325 ms  ÉCHEC : Connexion refusée : le code de retour n'est pas 200
+
+== Doit échouer : compte sans aucun like (réponse 200 mais liste vide) : conforme à l'attendu
+    1-Connexion      HTTP 200    313 ms  réussie
+    2-Titres-likes   HTTP 200    141 ms  ÉCHEC : No results for path: $[0]['id']

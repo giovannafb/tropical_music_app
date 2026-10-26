@@ -1,0 +1,12 @@
+# Mesures de référence (étapes 10 et 14) — déploiement docker — 2026-10-26T21:48:12+01:00
+# démarrage : de l'arrêt complet au parcours connexion + likes réussi ; mémoire : WSL au repos (60 s) moins WSL à vide ;
+# latence : médiane de 10 GET /api/me/likes/tracks au repos ; charge : charge moyenne de l'hôte sur 1 min au moment de la mesure
+cible=http://localhost:80
+memoire_a_vide_mo=1371
+execution_1=demarrage 12.8 s, memoire 4899 Mo, latence 6.3 ms, charge 2.49
+execution_2=demarrage 18.5 s, memoire 4879 Mo, latence 7.3 ms, charge 2.52
+execution_3=demarrage 17.1 s, memoire 4911 Mo, latence 5.7 ms, charge 3.06
+demarrage_median_s=17.1
+memoire_repos_mediane_mo=4899
+latence_mediane_ms=6.3
+empreinte_disque=6654 Mo (5952 Mo d'images, 702 Mo de volumes)

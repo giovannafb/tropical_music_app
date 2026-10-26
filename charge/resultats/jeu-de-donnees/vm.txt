@@ -1,0 +1,3 @@
+Catalogue : 500 titres visibles, empreinte 7d7618aa71d1a0dd
+Comptes : 101 supprimés, 101 créés (charge001 … charge100 avec 20 titres likés chacun, charge000 sans like)
+Likes : 2000, empreinte bec4fef387e73cc0

@@ -1,0 +1,2 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1793032489455,181,1-Connexion,401,Unauthorized,Utilisateurs 1-1,false,Connexion refusée : le code de retour n'est pas 200,243,234,1,1,http://localhost/api/auth/login,180,0,20

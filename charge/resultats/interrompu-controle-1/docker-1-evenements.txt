@@ -1,0 +1,5 @@
+workers_relances=0
+workers_hors_delai=0
+erreurs_nginx=0
+conteneurs_tues_memoire=0
+retour_au_repos_s=20

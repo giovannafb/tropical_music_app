@@ -1,0 +1,13 @@
+Validation du plan charge/plan/musicapp.jmx — déploiement docker (http://localhost:80) — 2026-10-26T17:34:36+01:00
+1 utilisateur, 1 itération ; fichiers bruts : docker-<cas>.csv
+
+== Parcours réussi (compte du fichier de comptes) : conforme à l'attendu
+    1-Connexion      HTTP 200    302 ms  réussie
+    2-Titres-likes   HTTP 200    118 ms  réussie
+
+== Doit échouer : mauvais mot de passe : conforme à l'attendu
+    1-Connexion      HTTP 401    181 ms  ÉCHEC : Connexion refusée : le code de retour n'est pas 200
+
+== Doit échouer : compte sans aucun like (réponse 200 mais liste vide) : conforme à l'attendu
+    1-Connexion      HTTP 200    206 ms  réussie
+    2-Titres-likes   HTTP 200    111 ms  ÉCHEC : No results for path: $[0]['id']

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.6.3">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="MusicApp - connexion puis titres likes">
+      <stringProp name="TestPlan.comments">Parcours utilisateur de la partie 4 : ouverture de session avec un compte du fichier de comptes, puis consultation de ses titres likés (écran Likes). Seul parcours qui traverse les trois couches : Nginx, API (argon2, JWT, Redis), MySQL.
+Paramètres (-Jnom=valeur) : hote, port, utilisateurs, montee (s), duree (s), iterations (-1 = jusqu'à la fin de la durée), comptes (fichier CSV), reflexion_min et reflexion_alea (ms).
+Campagne : jmeter -n -t musicapp.jmx -l resultats/vm-50.csv -Jutilisateurs=50 (voir charge/campagne.sh).</stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="Variables">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="hote" elementType="Argument">
+            <stringProp name="Argument.name">hote</stringProp>
+            <stringProp name="Argument.value">${__P(hote,localhost)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="port" elementType="Argument">
+            <stringProp name="Argument.name">port</stringProp>
+            <stringProp name="Argument.value">${__P(port,80)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </elementProp>
+    </TestPlan>
+    <hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Utilisateurs">
+        <stringProp name="TestPlan.comments">Nombre d'utilisateurs simultanés, durée de montée et durée totale : ce sont eux qui changent d'un palier à l'autre. Une itération = un utilisateur qui se connecte puis consulte ses likes ; en cas d'échec, l'itération s'arrête (la consultation n'aurait pas de sens sans session).</stringProp>
+        <stringProp name="ThreadGroup.num_threads">${__P(utilisateurs,1)}</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">${__P(montee,0)}</stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
+        <stringProp name="ThreadGroup.on_sample_error">startnextloop</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Boucle">
+          <stringProp name="LoopController.loops">${__P(iterations,-1)}</stringProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+        </elementProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.duration">${__P(duree,60)}</stringProp>
+        <stringProp name="ThreadGroup.delay">0</stringProp>
+        <boolProp name="ThreadGroup.delayedStart">false</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Fichier de comptes">
+          <stringProp name="TestPlan.comments">Une ligne par itération, partagée entre tous les utilisateurs virtuels : ils ne sont pas tous la même personne (100 comptes, chacun avec 20 titres likés).</stringProp>
+          <stringProp name="filename">${__P(comptes,../comptes/comptes.csv)}</stringProp>
+          <stringProp name="fileEncoding">UTF-8</stringProp>
+          <stringProp name="variableNames">login,mot_de_passe</stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <stringProp name="delimiter">,</stringProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="Valeurs HTTP par defaut">
+          <stringProp name="TestPlan.comments">Délais : une requête sans réponse au bout de 30 s compte comme une erreur, au lieu de bloquer l'utilisateur virtuel.</stringProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="Arguments">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${hote}</stringProp>
+          <stringProp name="HTTPSampler.port">${port}</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout">10000</stringProp>
+          <stringProp name="HTTPSampler.response_timeout">30000</stringProp>
+        </ConfigTestElement>
+        <hashTree/>
+        <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="Gestionnaire de cookies">
+          <stringProp name="TestPlan.comments">Vidé à chaque itération : chaque parcours ouvre une nouvelle session. L'API pose ses cookies avec l'attribut Secure ; JMeter les reçoit mais ne les renvoie pas sur http://, d'où l'extracteur de la connexion.</stringProp>
+          <collectionProp name="CookieManager.cookies"/>
+          <boolProp name="CookieManager.clearEachIteration">true</boolProp>
+          <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
+        </CookieManager>
+        <hashTree/>
+        <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Temps de reflexion">
+          <stringProp name="TestPlan.comments">Avant chaque requête : entre reflexion_min et reflexion_min + reflexion_alea millisecondes (par défaut 0,5 à 1,5 s), pour ressembler à un usage réel et non à une attaque.</stringProp>
+          <stringProp name="ConstantTimer.delay">${__P(reflexion_min,500)}</stringProp>
+          <stringProp name="RandomTimer.range">${__P(reflexion_alea,1000)}</stringProp>
+        </UniformRandomTimer>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="1-Connexion">
+          <stringProp name="TestPlan.comments">POST /api/auth/login avec le compte tiré du fichier de comptes.</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{"login":"${login}","password":"${mot_de_passe}"}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.path">/api/auth/login</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Corps JSON">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Extracteur du jeton de session">
+            <stringProp name="TestPlan.comments">Récupère le JWT d'accès dans l'en-tête Set-Cookie de la réponse (cookie access_token), pour le renvoyer à la requête suivante.</stringProp>
+            <stringProp name="RegexExtractor.useHeaders">true</stringProp>
+            <stringProp name="RegexExtractor.refname">jeton</stringProp>
+            <stringProp name="RegexExtractor.regex">(?i)set-cookie:\s*access_token=([^;\s]+)</stringProp>
+            <stringProp name="RegexExtractor.template">$1$</stringProp>
+            <stringProp name="RegexExtractor.default">JETON_ABSENT</stringProp>
+            <boolProp name="RegexExtractor.default_empty_value">false</boolProp>
+            <stringProp name="RegexExtractor.match_number">1</stringProp>
+          </RegexExtractor>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Connexion : code 200">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message">Connexion refusée : le code de retour n'est pas 200</stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">8</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Connexion : cookie de session present">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="1937218930">access_token=</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message">Pas de cookie access_token dans la réponse : aucune session ouverte</stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">16</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="2-Titres-likes">
+          <stringProp name="TestPlan.comments">GET /api/me/likes/tracks : les titres likés de l'utilisateur connecté (requête MySQL, sans cache).</stringProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="Arguments">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.path">/api/me/likes/tracks</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Jeton de session">
+            <stringProp name="TestPlan.comments">Réinjecte le jeton extrait à la connexion, comme le ferait le navigateur avec son cookie.</stringProp>
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Cookie</stringProp>
+                <stringProp name="Header.value">access_token=${jeton}</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Likes : code 200">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message">Consultation refusée : le code de retour n'est pas 200</stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">8</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Likes : au moins un titre">
+            <stringProp name="TestPlan.comments">La réponse est une liste JSON de titres : le premier doit exister. Une liste vide ou une page d'erreur renvoyée avec un code 200 font échouer la requête.</stringProp>
+            <stringProp name="JSON_PATH">$[0].id</stringProp>
+            <stringProp name="EXPECTED_VALUE"></stringProp>
+            <boolProp name="JSONVALIDATION">false</boolProp>
+            <boolProp name="EXPECT_NULL">false</boolProp>
+            <boolProp name="INVERT">false</boolProp>
+            <boolProp name="ISREGEX">false</boolProp>
+          </JSONPathAssertion>
+          <hashTree/>
+        </hashTree>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="Arbre de resultats (interface graphique uniquement)">
+          <stringProp name="TestPlan.comments">Pour construire et déboguer le plan dans l'interface graphique (1 utilisateur, 1 itération). Les campagnes se lancent en ligne de commande : ce récepteur n'écrit alors rien.</stringProp>
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
